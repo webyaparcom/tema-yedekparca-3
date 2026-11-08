@@ -1,0 +1,32 @@
+{
+  "name": "Footer 2",
+  "desing": {
+    "showlang": true,
+    "color": "#3586ff",
+    "logo": "logo.png",
+    "copyright": {
+      "tr": "© 2024 Tüm hakları saklıdır",
+      "en": "© 2024 All rights reserved",
+      "ar": "© 2024 جميع الحقوق محفوظة",
+      "de": "© 2024 Alle Rechte vorbehalten",
+      "ko": "© 2024 모든 권리 보유"
+    },
+    "wave_animation": true,
+    "social_icons": [
+      "facebook",
+      "twitter",
+      "instagram"
+    ],
+    "menu_items": [],
+    "alternative_design": true
+  },
+  "category": "footer",
+  "data": [],
+  "version": "1.1.0",
+  "description": "Web sitesi alt bilgi (footer) bölümü. Logo, telif hakları, iletişim bilgileri ve sosyal medya linklerini içerir. Tüm sayfa türlerinde kullanılabilir evrensel modüldür.",
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
+  }
+}

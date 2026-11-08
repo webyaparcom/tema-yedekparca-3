@@ -1,0 +1,20 @@
+{
+  "name": "Sayfa Listesi Kare",
+  "desing": {
+    "bgcolor": "#fff",
+    "color": "#000",
+    "page": "page",
+    "size": 4,
+    "category": "",
+    "aspect-ratio": "1 / 1"
+  },
+  "category": "page-list",
+  "description": "Beyaz arka planlı kare grid liste modülü. Sayfa içeriklerini light tema ile 4 sütunlu responsive düzende sergiler. 7 farklı projede kullanılır: ajans, kargo, üretim, kurumsal ve profesyonel hizmet firmalarında. Minimalist beyaz tasarım, kare görsel formatı ve kategori bazlı içerik gösterimi özellikleri vardır.",
+  "version": "1.0.0",
+  "icon": "grid_view",
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
+  }
+}

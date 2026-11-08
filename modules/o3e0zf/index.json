@@ -1,0 +1,161 @@
+{
+  "name": {
+    "tr": "Slider Ken Burns",
+    "en": "Ken Burns Slider",
+    "ar": "سلايدر كين بيرنز"
+  },
+  "description": {
+    "tr": "Sıfır bağımlılıklı tam genişlik slider (Swiper yok): görsel yavaş yakınlaşma/kayma (CSS keyframes 10 sn, reduced-motion'da kapalı), her slaytta eyebrow + h2 + metin + CTA ve metin giriş animasyonu; nokta + ok navigasyon, klavye ←/→, dokunma kaydırma, otomatik oynatma durdur/başlat düğmesi (hover/odakta duraklar, reduced-motion'da kapalı). data[] = [{img, alt{}, eyebrow{}, title{}, text{}, cta{}, url}]. desing.stil: tam | kart (içerik yarı saydam kartta) | bolunmus (görsel bitiş tarafında, metin düz zeminde). Yükseklik desing.yukseklik (vh, min 420px). Üç dil + RTL.",
+    "en": "Zero-dependency full-width slider (no Swiper): slow image zoom/pan (CSS keyframes 10 s, off under reduced-motion), eyebrow + h2 + text + CTA per slide with text entrance animation; dot + arrow navigation, keyboard ←/→, touch swipe, autoplay pause/play button (pauses on hover/focus, off under reduced-motion). data[] = [{img, alt{}, eyebrow{}, title{}, text{}, cta{}, url}]. desing.stil: tam | kart (content in a translucent card) | bolunmus (image on the end side, text on a solid background). Height desing.yukseklik (vh, min 420px). Three languages + RTL.",
+    "ar": "سلايدر بعرض كامل بدون أي تبعيات (بلا Swiper): تقريب/تحريك بطيء للصورة (CSS keyframes 10 ث، يتوقف عند تقليل الحركة)، في كل شريحة تسمية + h2 + نص + زر مع حركة دخول للنص؛ تنقّل بالنقاط والأسهم، لوحة المفاتيح ←/→، سحب باللمس، زر إيقاف/تشغيل التشغيل التلقائي (يتوقف عند التحويم/التركيز، ومعطّل عند تقليل الحركة). data[] = [{img, alt{}, eyebrow{}, title{}, text{}, cta{}, url}]. desing.stil: tam | kart (المحتوى في بطاقة شبه شفافة) | bolunmus (الصورة في جهة النهاية والنص على خلفية صلبة). الارتفاع desing.yukseklik (vh، الحد الأدنى 420px). ثلاث لغات + RTL."
+  },
+  "version": "1.0.0",
+  "icon": "slideshow",
+  "category": "slider",
+  "tags": ["slider", "kenburns", "ken-burns", "karusel", "hero", "sifir-bagimlilik", "ar"],
+  "desing": {
+    "stil": "tam",
+    "yukseklik": 72,
+    "sure": 6000,
+    "otomatik": true,
+    "max": "1200px",
+    "overlay": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 25%, #0b1220)",
+    "overlayText": "#ffffff",
+    "bg": "var(--mx-site-bg, #ffffff)",
+    "surface": "var(--mx-site-surface, #f6f6f4)",
+    "text": "var(--mx-site-text, #1b1b1b)",
+    "muted": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+    "accent": "var(--mx-site-primary, #2563eb)",
+    "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+    "radius": "16px",
+    "aria_label": {
+      "tr": "Tanıtım slaytları",
+      "en": "Featured slides",
+      "ar": "شرائح تعريفية"
+    },
+    "prev_label": {
+      "tr": "Önceki slayt",
+      "en": "Previous slide",
+      "ar": "الشريحة السابقة"
+    },
+    "next_label": {
+      "tr": "Sonraki slayt",
+      "en": "Next slide",
+      "ar": "الشريحة التالية"
+    },
+    "dot_label": {
+      "tr": "{n}. slayta git",
+      "en": "Go to slide {n}",
+      "ar": "الانتقال إلى الشريحة {n}"
+    },
+    "pause_label": {
+      "tr": "Otomatik oynatmayı durdur",
+      "en": "Pause autoplay",
+      "ar": "إيقاف التشغيل التلقائي"
+    },
+    "play_label": {
+      "tr": "Otomatik oynatmayı başlat",
+      "en": "Start autoplay",
+      "ar": "بدء التشغيل التلقائي"
+    },
+    "slide_label": {
+      "tr": "{i} / {n}",
+      "en": "{i} of {n}",
+      "ar": "{i} من {n}"
+    }
+  },
+  "data": [
+    {
+      "img": "",
+      "alt": {
+        "tr": "Üretim hattı",
+        "en": "Production line",
+        "ar": "خط الإنتاج"
+      },
+      "eyebrow": {
+        "tr": "Üretim",
+        "en": "Production",
+        "ar": "الإنتاج"
+      },
+      "title": {
+        "tr": "Yüksek hassasiyetli üretim",
+        "en": "High-precision manufacturing",
+        "ar": "تصنيع عالي الدقة"
+      },
+      "text": {
+        "tr": "Modern makine parkurumuzla toleransı düşük, teslimi hızlı üretim.",
+        "en": "Low-tolerance, fast-delivery production with our modern machine park.",
+        "ar": "إنتاج دقيق وسريع التسليم بمنشآتنا الحديثة."
+      },
+      "cta": {
+        "tr": "Hizmetlerimiz",
+        "en": "Our services",
+        "ar": "خدماتنا"
+      },
+      "url": "hizmetler"
+    },
+    {
+      "img": "",
+      "alt": {
+        "tr": "Mühendislik ekibi",
+        "en": "Engineering team",
+        "ar": "فريق الهندسة"
+      },
+      "eyebrow": {
+        "tr": "Mühendislik",
+        "en": "Engineering",
+        "ar": "الهندسة"
+      },
+      "title": {
+        "tr": "Tasarımdan prototipe tek ekip",
+        "en": "One team from design to prototype",
+        "ar": "فريق واحد من التصميم إلى النموذج الأولي"
+      },
+      "text": {
+        "tr": "Projenizi birlikte planlar, riskleri baştan görürüz.",
+        "en": "We plan your project together and spot risks early.",
+        "ar": "نخطط مشروعكم معًا ونرصد المخاطر مبكرًا."
+      },
+      "cta": {
+        "tr": "Projeler",
+        "en": "Projects",
+        "ar": "المشاريع"
+      },
+      "url": "projeler"
+    },
+    {
+      "img": "",
+      "alt": {
+        "tr": "Lojistik ve teslimat",
+        "en": "Logistics and delivery",
+        "ar": "اللوجستيات والتسليم"
+      },
+      "eyebrow": {
+        "tr": "Teslimat",
+        "en": "Delivery",
+        "ar": "التسليم"
+      },
+      "title": {
+        "tr": "Zamanında, eksiksiz teslim",
+        "en": "On time, complete delivery",
+        "ar": "تسليم كامل في موعده"
+      },
+      "text": {
+        "tr": "Sevkiyat takibi ve kurulum desteğiyle süreç kapanır.",
+        "en": "Shipment tracking and installation support close the loop.",
+        "ar": "تتبّع الشحن ودعم التركيب يكملان العملية."
+      },
+      "cta": {
+        "tr": "İletişim",
+        "en": "Contact",
+        "ar": "اتصل بنا"
+      },
+      "url": "iletisim"
+    }
+  ],
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
+  }
+}

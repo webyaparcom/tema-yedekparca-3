@@ -1,0 +1,22 @@
+{
+  "name": "Page Desing 4",
+  "desing": {
+    "height": "200",
+    "opacity": "0.5",
+    "font-size": "50",
+    "backgroundcolor": "#000",
+    "menu-active": "#1e3046",
+    "category": "page",
+    "textcolor": "#ffffff",
+    "activetext": "#ffffff"
+  },
+  "category": "page",
+  "description": "Sayfa hero section ve kategori başlık tasarım modülü. Özelleştirilmiş menü renk entegrasyonu ile sayfa başlığı gösterir. 7 farklı projede kullanılır: lojistik, üretim, üretim, ajans, kurumsal ve restoran sektörlerinde. Aktif menü renk senkronizasyonu, kategori görseli ve opacity ayarlanabilir overlay içerir.",
+  "version": "1.0.0",
+  "icon": "web",
+  "veri": {
+    "statik": true,
+    "dinamik": false,
+    "kaynak": "desing/data"
+  }
+}

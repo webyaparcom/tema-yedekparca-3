@@ -1,0 +1,270 @@
+<div class="modulex">
+
+  {{html}}
+
+  
+</div>
+<style>
+  .modulex {
+    width: var(--max);
+    margin: --margin--;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .modulexcontainerlist {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    border-bottom: solid 1px #ddd;
+    gap: 20px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    color: inherit;
+    background-color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .modulexcontainerlist:hover {
+    background-color: --bgcolor--;
+    border-bottom-color: --color--;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+
+
+  .modulexcontainerlist > span {
+    font-size: 24px;
+    color: --color--;
+    min-width: 30px;
+  }
+
+  .modulexcontainerlist > div,
+  .modulexcontainerlist > .text-link {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #444;
+    font-weight: 500;
+    flex: 1;
+    text-decoration: none;
+  }
+
+  .modulexcontainerlist > .text-link:hover {
+    color: --color--;
+    text-decoration: underline;
+  }
+
+  .copy-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    margin-left: auto;
+  }
+
+  .copy-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  .copy-btn .material-symbols-outlined {
+    font-size: 18px;
+    color: --color--;
+  }
+
+  .copy-btn:active {
+    transform: scale(0.95);
+  }
+
+  .copy-btn.copied .material-symbols-outlined {
+    color: #4caf50;
+  }
+
+  .modulex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .modulex-container-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f0f0f0;
+  }
+
+  .location-group {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #fafafa;
+    margin-bottom: 15px;
+  }
+
+  .location-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: --color--;
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid --color--;
+    text-align: left;
+  }
+
+  .modulex-body {
+    width: calc(var(--max) - 40px);
+    background-color: --bgcolor--;
+    border: 1px solid #dedede;
+    border-radius: 15px;
+    padding: 20px;
+  }
+
+  .location-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  .location-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    flex: 1;
+  }
+
+  .location-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .location-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .modulex-body {
+      width: 100%;
+      padding: 15px;
+    }
+
+    .modulex-container-body {
+      padding: 15px;
+    }
+
+    .location-group {
+      padding: 15px;
+    }
+
+    .location-title {
+      font-size: 16px;
+    }
+
+    .modulexcontainerlist {
+      padding: 12px;
+      gap: 15px;
+    }
+
+    .modulexcontainerlist > div {
+      font-size: 14px;
+    }
+
+    .modulexcontainerlist > span {
+      font-size: 20px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .modulexcontainerlist {
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+    }
+
+    .modulexcontainerlist > div {
+      font-size: 13px;
+    }
+
+    .copy-btn .material-symbols-outlined {
+      font-size: 16px;
+    }
+  }
+
+  /* W2: mobil tasma kontrolu */
+  @media (max-width: 768px) {
+    [class*="modulex"] {
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+  }
+
+  /* W2: erisilebilirlik — animasyon kapatma */
+  @media (prefers-reduced-motion: reduce) {
+    [class*="modulex"],
+    [class*="modulex"] * {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+</style>
+<script>
+  function copyToClipboard(button) {
+    var text = button.getAttribute('data-copy');
+    
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function() {
+        showCopyFeedback(button);
+      }).catch(function(err) {
+        console.error('Copy error:', err);
+        fallbackCopy(text, button);
+      });
+    } else {
+      fallbackCopy(text, button);
+    }
+  }
+
+  function fallbackCopy(text, button) {
+    var textArea = document.createElement('textarea');
+    textArea.value = text;
+    textArea.style.position = 'fixed';
+    textArea.style.left = '-999999px';
+    textArea.style.top = '-999999px';
+    document.body.appendChild(textArea);
+    textArea.focus();
+    textArea.select();
+    
+    try {
+      document.execCommand('copy');
+      showCopyFeedback(button);
+    } catch (err) {
+      console.error('Copy error:', err);
+    }
+    
+    document.body.removeChild(textArea);
+  }
+
+  function showCopyFeedback(button) {
+    button.classList.add('copied');
+    var originalIcon = button.querySelector('.material-symbols-outlined').textContent;
+    button.querySelector('.material-symbols-outlined').textContent = 'check';
+    
+    setTimeout(function() {
+      button.classList.remove('copied');
+      button.querySelector('.material-symbols-outlined').textContent = originalIcon;
+    }, 1000);
+  }
+</script>
