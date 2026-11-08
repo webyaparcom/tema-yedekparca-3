@@ -1,0 +1,2703 @@
+{
+  "data": [
+    {
+      "index": 0,
+      "name": "Menü 4",
+      "path": "menu-4",
+      "local": "header",
+      "category": "menu",
+      "id": "t4mn01",
+      "desing": {
+        "logo": "logo.png",
+        "color": "#111111",
+        "height": "100px",
+        "background-color": "#F9B200",
+        "menubg": "",
+        "menutext": "#fff",
+        "menuhoverbg": "rgba(255,255,255,.18)"
+      },
+      "version": "1.0.0",
+      "icon": "menu"
+    },
+    {
+      "name": "Slider",
+      "path": "slider",
+      "local": "header",
+      "category": "slider",
+      "id": "t4sl01",
+      "data": [
+        {
+          "img": "1.jpg"
+        },
+        {
+          "img": "2.jpg"
+        },
+        {
+          "img": "3.jpg"
+        }
+      ],
+      "desing": {
+        "delay": 3000,
+        "margin": "0px 0 0 0"
+      },
+      "version": "1.0.0",
+      "icon": "view_carousel",
+      "index": 1
+    },
+    {
+      "name": "İletişim",
+      "path": "contact-4",
+      "local": "body",
+      "category": "contact",
+      "id": "t4ct01",
+      "desing": {
+        "color": "#111111",
+        "name": {
+          "tr": "Bize Ulaşın"
+        },
+        "margin": "30px 0px 30px 0px",
+        "height": "250px",
+        "bgcolor": "#ffffff"
+      },
+      "data": [
+        {
+          "data": [
+            {
+              "icon": "location_on",
+              "name": {
+                "tr": "ADRES"
+              },
+              "text": "Şehitkamil / Gaziantep",
+              "externalUrl": ""
+            },
+            {
+              "icon": "call",
+              "name": {
+                "tr": "TELEFON"
+              },
+              "text": "0530 000 00 00",
+              "url": "tel:05300000000"
+            },
+            {
+              "icon": "mail",
+              "name": {
+                "tr": "MAİL"
+              },
+              "text": "info@{{domain}}",
+              "externalUrl": ""
+            }
+          ]
+        }
+      ],
+      "version": "1.0.0",
+      "icon": "contact_mail",
+      "index": 2
+    },
+    {
+      "name": "Maps",
+      "path": "map-2",
+      "local": "body",
+      "category": "map",
+      "id": "t4mp01",
+      "desing": {
+        "height": "200",
+        "opacity": "0.5",
+        "backgroundcolor": "#ffffff",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "img": "map.png",
+        "externalUrl": "",
+        "stil": "cerceveli",
+        "address": {
+          "tr": "Sanayi Sitesi 4. Blok No: 12, Şehitkamil, Gaziantep (kurgusal adres)",
+          "en": "12 Block 4, Industrial Estate, Sehitkamil, Gaziantep (fictional address)",
+          "ar": "المجمع الصناعي، المبنى 4 رقم 12، شهيد كامل، غازي عنتاب (عنوان افتراضي)"
+        },
+        "phone": "+90 342 000 00 00",
+        "email": "stok@yesilvites.example",
+        "margin": "0px"
+      },
+      "version": "1.0.0",
+      "icon": "map",
+      "index": 3
+    },
+    {
+      "index": 4,
+      "name": "Page Desing",
+      "path": "page-desing-4",
+      "local": "body",
+      "category": "page",
+      "id": "t4pd01",
+      "desing": {
+        "height": "200",
+        "opacity": "0.5",
+        "font-size": "32",
+        "backgroundcolor": "var(--mx-site-primary, #2563eb)",
+        "menu-active": "var(--mx-site-primary, #2563eb)",
+        "category": "page",
+        "textcolor": "var(--mx-site-primary-contrast, #ffffff)",
+        "activetext": "var(--mx-site-primary-contrast, #ffffff)"
+      },
+      "version": "1.0.0",
+      "icon": "web"
+    },
+    {
+      "name": "Footer 2",
+      "path": "footer-2",
+      "local": "footer",
+      "category": "footer",
+      "id": "t4ft01",
+      "desing": {
+        "color": "#F9B200",
+        "logo": "logo.png",
+        "copyright": "© Tüm hakları saklıdır",
+        "wave_animation": true,
+        "social_icons": [
+          "facebook",
+          "twitter",
+          "instagram"
+        ],
+        "menu_items": [],
+        "alternative_design": true,
+        "showlang": true
+      },
+      "data": [],
+      "version": "1.0.0",
+      "icon": "web_asset",
+      "index": 5
+    },
+    {
+      "id": "t4hr01",
+      "name": "Hero",
+      "path": "hero-1",
+      "local": "body",
+      "category": "hero",
+      "version": "1.1.0",
+      "icon": "hero",
+      "desing": {
+        "max": "1200px",
+        "gradient": "linear-gradient(135deg, #111111 0%, #111111cc 50%, #111111 100%)",
+        "overlay": "linear-gradient(135deg, rgba(17, 17, 17, 0.88) 0%, rgba(17, 17, 17, 0.82) 100%)",
+        "title_accent": "linear-gradient(135deg, #F9B200, #F9B200)",
+        "btn_primary_bg": "#F9B200",
+        "btn_primary_color": "#111111",
+        "stat_accent": "#F9B200",
+        "shape1": "linear-gradient(135deg, rgba(249, 178, 0, 0.4), rgba(249, 178, 0, 0.12))",
+        "shape2": "linear-gradient(135deg, rgba(17, 17, 17, 0.55), rgba(17, 17, 17, 0.25))",
+        "shape3": "linear-gradient(135deg, rgba(255,255,255,0.14), rgba(255,255,255,0.04))",
+        "title": {
+          "tr": "Kurumsal Çözümlerle Yanınızdayız",
+          "en": "Corporate Solutions"
+        },
+        "description": {
+          "tr": "Profesyonel ekibimizle markanıza özel hizmetler sunuyoruz.",
+          "en": "Tailored services for your brand."
+        },
+        "badge": {
+          "tr": "Güvenilir Partner",
+          "en": "Trusted Partner"
+        },
+        "image": "",
+        "alt": {
+          "tr": "Hero",
+          "en": "Hero"
+        },
+        "btn1": {
+          "tr": "Keşfet",
+          "en": "Explore"
+        },
+        "btn1_url": "urunler",
+        "btn2": {
+          "tr": "İletişim",
+          "en": "Contact"
+        },
+        "btn2_url": "iletisim",
+        "stats": "150+|Proje|50+|Müşteri|10+|Yıl",
+        "stil": ""
+      },
+      "index": 6
+    },
+    {
+      "id": "t4ls01",
+      "name": "Ana Sayfa Liste",
+      "path": "page-list-2",
+      "local": "body",
+      "category": "page-list",
+      "version": "1.0.0",
+      "icon": "grid_view",
+      "desing": {
+        "page": "page",
+        "size": 3,
+        "category": "",
+        "bgcolor": "#fff",
+        "color": "#000",
+        "aspect-ratio": "1 / 1"
+      },
+      "index": 7
+    },
+    {
+      "id": "t4ca01",
+      "name": "CTA",
+      "path": "cta-1",
+      "local": "body",
+      "category": "cta",
+      "version": "1.1.0",
+      "icon": "campaign",
+      "desing": {
+        "max": "1200px",
+        "gradient": "linear-gradient(135deg, #111111 0%, #111111ee 100%)",
+        "btnbg": "#F9B200",
+        "btncolor": "#111111",
+        "title": {
+          "tr": "Projenizi Birlikte Hayata Geçirelim",
+          "en": "Let's Build Together"
+        },
+        "description": {
+          "tr": "Ücretsiz keşif görüşmesi icin hemen iletisime geçin.",
+          "en": "Contact us for a free discovery call."
+        },
+        "btn1Text": {
+          "tr": "İletişime Gec",
+          "en": "Contact"
+        },
+        "btn1Url": "iletisim",
+        "btn2Text": {
+          "tr": "Ürünler",
+          "en": "Products"
+        },
+        "btn2Url": "urunler",
+        "stil": ""
+      },
+      "index": 8
+    },
+    {
+      "id": "t4plpr",
+      "name": "Ürünler Liste",
+      "path": "page-list-2",
+      "local": "body",
+      "category": "page-list",
+      "version": "1.0.0",
+      "icon": "grid_view",
+      "desing": {
+        "page": "products",
+        "size": 3,
+        "category": "",
+        "bgcolor": "#fff",
+        "color": "#000",
+        "aspect-ratio": "1 / 1"
+      },
+      "index": 9
+    },
+    {
+      "id": "t4in01",
+      "name": "Tanitim",
+      "path": "module-1",
+      "local": "body",
+      "category": "module",
+      "version": "1.1.0",
+      "icon": "business",
+      "index": 10,
+      "desing": {
+        "name": {
+          "tr": "Bizi Tanıyın",
+          "en": "About Us"
+        },
+        "description": {
+          "tr": "Yılların deneyimi ve uzman kadromuzla kurumsal çözümler sunuyoruz.",
+          "en": "Corporate solutions with experience and expertise."
+        },
+        "name2": {
+          "tr": "Vizyonumuz",
+          "en": "Vision"
+        },
+        "spot2": {
+          "tr": "Sektörümüzde yenilikçi yaklaşımlarla öncü olmak.",
+          "en": "Lead with innovation."
+        },
+        "icon2": "visibility",
+        "name3": {
+          "tr": "Misyonumuz",
+          "en": "Mission"
+        },
+        "spot3": {
+          "tr": "İhtiyaç duyulan çözümleri hızlı ve şeffaf sunmak.",
+          "en": "Deliver solutions fast and clearly."
+        },
+        "icon3": "flag",
+        "img": "index.jpg",
+        "bgcolor": "#111111",
+        "fontcolor": "#fff",
+        "margintop": "20",
+        "marginbotton": "20",
+        "title": {
+          "tr": "Kurumsal",
+          "en": "Corporate"
+        },
+        "stil": ""
+      }
+    },
+    {
+      "name": "Demo Kredi Şeridi",
+      "description": "Demo sitelerin alt bilgisinde duran kredi şeridi: «Bu demo Webyapar tarafından hazırlanmıştır — Bu temayı iste». Marka adı çevrilmez (Latin, dir=ltr izole), bağlantı demo adına göre webyapar.com/temalar#<slug>. Üç dil (TR/EN/AR), mantıksal CSS (RTL), mobilde sarar, reduced-motion'a saygılı.",
+      "version": "1.0.0",
+      "icon": "campaign",
+      "category": "demo",
+      "tags": [
+        "demo",
+        "footer",
+        "kredi",
+        "rtl"
+      ],
+      "desing": {
+        "href": "https://webyapar.com/temalar#yedekparca",
+        "brand": "Webyapar",
+        "text": {
+          "tr": "Bu demo {brand} tarafından hazırlanmıştır —",
+          "en": "This demo was prepared by {brand} —",
+          "ar": "تم إعداد هذا العرض التجريبي بواسطة {brand} —"
+        },
+        "ctaText": {
+          "tr": "Bu temayı iste",
+          "en": "Get this theme",
+          "ar": "اطلب هذا القالب"
+        },
+        "newTabText": {
+          "tr": "(yeni sekmede açılır)",
+          "en": "(opens in a new tab)",
+          "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "ariaLabel": {
+          "tr": "Demo bilgisi",
+          "en": "Demo credit",
+          "ar": "معلومات العرض التجريبي"
+        }
+      },
+      "id": "ddietn",
+      "path": "demo-kredi",
+      "local": "footer",
+      "data": [],
+      "index": 11
+    },
+    {
+      "name": "Kurumsal Değerler 1",
+      "desing": {
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "badgebg": "#2E6BFF",
+        "badgecolor": "#ffffff",
+        "badge": {
+          "tr": "Parça grupları",
+          "en": "Part groups",
+          "ar": "مجموعات القطع"
+        },
+        "title": {
+          "tr": "Hangi parça gruplarını tutuyoruz?",
+          "en": "Which part groups do we stock?",
+          "ar": "ما مجموعات القطع التي نوفّرها؟"
+        },
+        "description": {
+          "tr": "Parçalar «OEM» (araç üreticisinin onayladığı) ya da «eşdeğer» olarak açıkça etiketlenir; «orijinal» ibaresi yalnızca OEM parçada kullanılır.",
+          "en": "Parts are clearly labelled “OEM” (approved by the vehicle manufacturer) or “equivalent”; the word “original” is used only for OEM parts.",
+          "ar": "تُوسَم القطع بوضوح بأنها «OEM» (معتمدة من مصنّع المركبة) أو «مكافئة»؛ ولا تُستخدم كلمة «أصلية» إلا للقطع OEM."
+        }
+      },
+      "data": [
+        {
+          "icon": "car_repair",
+          "name": {
+            "tr": "Fren sistemi",
+            "en": "Brake system",
+            "ar": "نظام الفرامل"
+          },
+          "description": {
+            "tr": "Balata, disk, kaliper ve fren hortumları; OEM ve eşdeğer.",
+            "en": "Pads, discs, calipers and brake hoses; OEM and equivalent.",
+            "ar": "فحمات وأقراص وكاليبرات وخراطيم فرامل؛ OEM ومكافئة."
+          }
+        },
+        {
+          "icon": "filter_alt",
+          "name": {
+            "tr": "Filtreler",
+            "en": "Filters",
+            "ar": "الفلاتر"
+          },
+          "description": {
+            "tr": "Yağ, hava, yakıt ve polen filtreleri.",
+            "en": "Oil, air, fuel and cabin filters.",
+            "ar": "فلاتر الزيت والهواء والوقود والمقصورة."
+          }
+        },
+        {
+          "icon": "settings",
+          "name": {
+            "tr": "Motor parçaları",
+            "en": "Engine parts",
+            "ar": "قطع المحرك"
+          },
+          "description": {
+            "tr": "Kayış, conta, buji ve pompa grupları.",
+            "en": "Belts, gaskets, spark plugs and pump groups.",
+            "ar": "سيور وحشيات وشمعات إشعال ومجموعات مضخات."
+          }
+        },
+        {
+          "icon": "tire_repair",
+          "name": {
+            "tr": "Süspansiyon ve aks",
+            "en": "Suspension and axle",
+            "ar": "التعليق والمحور"
+          },
+          "description": {
+            "tr": "Amortisör, rotil, salıncak ve rulman.",
+            "en": "Shock absorbers, ball joints, control arms and bearings.",
+            "ar": "ممتصات صدمات ومفاصل كروية وأذرع ورولمانات."
+          }
+        },
+        {
+          "icon": "bolt",
+          "name": {
+            "tr": "Elektrik ve ateşleme",
+            "en": "Electrics and ignition",
+            "ar": "الكهرباء والإشعال"
+          },
+          "description": {
+            "tr": "Akü, ateşleme bobini ve sensörler.",
+            "en": "Batteries, ignition coils and sensors.",
+            "ar": "بطاريات وملفات إشعال ومستشعرات."
+          }
+        },
+        {
+          "icon": "oil_barrel",
+          "name": {
+            "tr": "Yağlar ve sıvılar",
+            "en": "Oils and fluids",
+            "ar": "الزيوت والسوائل"
+          },
+          "description": {
+            "tr": "Motor yağı, antifriz ve fren hidroliği.",
+            "en": "Engine oil, coolant and brake fluid.",
+            "ar": "زيت المحرك ومانع التجمد وسائل الفرامل."
+          }
+        }
+      ],
+      "category": "values",
+      "description": "Kurumsal değer kartları (MLA tarzı dört sütun). Rakam yok; ikon, başlık ve kısa açıklama. Animasyon, mobil tek sütun ve prefers-reduced-motion destekler.",
+      "version": "1.0.0",
+      "icon": "diamond",
+      "id": "6z2mtm",
+      "path": "values-1",
+      "local": "body",
+      "index": 12
+    },
+    {
+      "name": "SSS Akordeon 1",
+      "desing": {
+        "max": "900px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "cardbg": "var(--mx-site-surface, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "titlecolor": "var(--mx-site-text, #1b1b1b)",
+        "textcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "badge": {
+          "tr": "SSS",
+          "en": "FAQ",
+          "ar": "الأسئلة الشائعة"
+        },
+        "title": {
+          "tr": "Sıkça sorulan sorular",
+          "en": "Frequently asked questions",
+          "ar": "الأسئلة الشائعة"
+        },
+        "description": {
+          "tr": "Merak edilenler ve kısa yanıtlar.",
+          "en": "Common questions and short answers.",
+          "ar": "أسئلة متكررة وإجابات موجزة."
+        },
+        "linecolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)"
+      },
+      "data": [],
+      "category": "faq",
+      "description": "SSS akordeon modülü. Soru-cevap listesini tek seferde bir açık olacak şekilde akordeon düzende gösterir. Çok dilli veri, animasyonlu açılış, mobil uyum ve erişilebilirlik (aria-expanded) desteği içerir.",
+      "version": "1.0.0",
+      "icon": "quiz",
+      "id": "k1ha1k",
+      "path": "faq-1",
+      "local": "body",
+      "index": 13
+    },
+    {
+      "name": "Tanıtım Modülü",
+      "local": "body",
+      "desing": {
+        "stil": "yuzen-gorsel",
+        "name": {
+          "tr": "Yeşil Vites Yedek Parça",
+          "en": "Yesil Vites Auto Parts",
+          "ar": "يشيل فيتس لقطع الغيار"
+        },
+        "description": {
+          "tr": "Yeşil Vites Yedek Parça, servislere ve bireysel müşterilere doğru parçayı doğru etiketle ulaştırmayı ilke edinen kurgusal bir demo firmadır. Bu sitedeki ürünler, adresler ve bilgiler kurgusaldır.",
+          "en": "Yesil Vites Auto Parts is a fictional demo company whose principle is to deliver the right part with the right label to workshops and individual customers. Products, addresses and details on this site are fictional.",
+          "ar": "يشيل فيتس لقطع الغيار شركة تجريبية افتراضية مبدؤها إيصال القطعة الصحيحة بالوسم الصحيح إلى الورش والعملاء الأفراد. المنتجات والعناوين والبيانات في هذا الموقع افتراضية."
+        },
+        "name2": {
+          "tr": "Doğru etiket",
+          "en": "Correct labelling",
+          "ar": "وسم صحيح"
+        },
+        "spot2": {
+          "tr": "OEM ve eşdeğer ayrımı her üründe yazılıdır.",
+          "en": "The OEM / equivalent distinction is stated on every item.",
+          "ar": "يُذكر التمييز بين OEM والمكافئ في كل منتج."
+        },
+        "icon2": "sell",
+        "name3": {
+          "tr": "Uygunluk kontrolü",
+          "en": "Fitment check",
+          "ar": "فحص الملاءمة"
+        },
+        "spot3": {
+          "tr": "Parça, araç bilgisiyle eşleştirilmeden satılmaz.",
+          "en": "Parts are not sold without matching them to the vehicle details.",
+          "ar": "لا تُباع القطع دون مطابقتها ببيانات المركبة."
+        },
+        "icon3": "rule",
+        "img": "yedekparca-3-filtre.webp",
+        "bgcolor": "var(--mx-site-surface-2, #ececea)",
+        "fontcolor": "var(--mx-site-text, #1b1b1b)",
+        "margintop": "20",
+        "marginbotton": "20",
+        "title": {
+          "tr": "Hakkımızda",
+          "en": "About us",
+          "ar": "من نحن"
+        }
+      },
+      "category": "module",
+      "description": "Kurumsal tanıtım ve hakkımızda modülü. Firma tanıtımı, vizyon, misyon metinlerini görsel ile birlikte sunar. Ana sayfa şeridi ve temalar için varsayılan cok dilli metinler. İki kolonlu responsive tasarım, W2 animasyon ve icon desteği içerir. Görsel varyant desing.stil (31 Eki 2026): \"\" klasik (beyaz çerçeveli yuvarlak görsel, bugünkü görünüm) · \"yuzen-gorsel\" (dik kart görsel bandın dışına taşar, gölgeli, hafif eğik) · \"cerceve-ofset\" (kare görsel, arkasında kaymış primary renk çerçeve) · \"ikon-liste\" (yatay görsel + vizyon/misyon ikonlu madde listesi; ikon icon2/icon3). Bant zemini/yazısı bgcolor/fontcolor çifti kalır; eklenen renkler yalnız var(--mx-site-*) token.",
+      "version": "1.2.0",
+      "icon": "business",
+      "id": "suyghk",
+      "path": "module-1",
+      "data": [],
+      "index": 14
+    },
+    {
+      "name": "Galeri Masonry (Filtre + Lightbox)",
+      "description": "Masonry (sütun) ya da sabit oranlı ızgara galeri: kategori çipleriyle filtre (?cat= URL durumu, aria-pressed), lightbox (klavye, filtrelenmişte yalnız görünenler gezilir), lazy yükleme (width/height ile CLS yok), görselsiz öğede nötr yer tutucu. gap:0 ile kenarsız ızgara, hover başlık. Öğeler data[] içinde {img, thumb?, title{tr,en,ar}, cat, w, h, alt{tr,en,ar}}; kategoriler desing.cats[]. Üç dil + RTL.",
+      "version": "1.0.0",
+      "icon": "photo_library",
+      "category": "galeri",
+      "tags": [
+        "galeri",
+        "masonry",
+        "filtre",
+        "lightbox",
+        "portfolyo",
+        "gallery",
+        "ar"
+      ],
+      "desing": {
+        "max": "1280px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "gap": "12px",
+        "radius": "8px",
+        "columns": {
+          "d": 3,
+          "t": 3,
+          "m": 2
+        },
+        "ratio": "auto",
+        "captions": "hover",
+        "filter": true,
+        "lightbox": true,
+        "lazy": true,
+        "urlPrefix": "",
+        "title": {
+          "tr": "Depodan kareler",
+          "en": "Inside the warehouse",
+          "ar": "لقطات من المستودع"
+        },
+        "description": {
+          "tr": "Parça grupları ve depo görüntüleri; markasızdır.",
+          "en": "Part groups and warehouse images; unbranded.",
+          "ar": "صور مجموعات القطع والمستودع؛ بدون علامات تجارية."
+        },
+        "allLabel": {
+          "tr": "Tümü",
+          "en": "All",
+          "ar": "الكل"
+        },
+        "filterLabel": {
+          "tr": "Kategoriye göre filtrele",
+          "en": "Filter by category",
+          "ar": "التصفية حسب الفئة"
+        },
+        "countText": {
+          "zero": {
+            "ar": "لا توجد صور"
+          },
+          "one": {
+            "tr": "{n} fotoğraf",
+            "en": "{n} photo",
+            "ar": "صورة واحدة"
+          },
+          "two": {
+            "ar": "صورتان"
+          },
+          "few": {
+            "ar": "{n} صور"
+          },
+          "many": {
+            "ar": "{n} صورة"
+          },
+          "other": {
+            "tr": "{n} fotoğraf",
+            "en": "{n} photos",
+            "ar": "{n} صورة"
+          }
+        },
+        "emptyText": {
+          "tr": "Henüz gösterilecek görsel yok.",
+          "en": "There are no images to show yet.",
+          "ar": "لا توجد صور لعرضها بعد."
+        },
+        "lightboxLabels": {
+          "dialog": {
+            "tr": "Görsel görüntüleyici",
+            "en": "Image viewer",
+            "ar": "عارض الصور"
+          },
+          "close": {
+            "tr": "Kapat",
+            "en": "Close",
+            "ar": "إغلاق"
+          },
+          "prev": {
+            "tr": "Önceki görsel",
+            "en": "Previous image",
+            "ar": "الصورة السابقة"
+          },
+          "next": {
+            "tr": "Sonraki görsel",
+            "en": "Next image",
+            "ar": "الصورة التالية"
+          },
+          "counter": {
+            "tr": "{i} / {n}",
+            "en": "{i} / {n}",
+            "ar": "{i} من {n}"
+          }
+        },
+        "cats": [
+          {
+            "id": "parca",
+            "name": {
+              "tr": "Parçalar",
+              "en": "Parts",
+              "ar": "القطع"
+            }
+          },
+          {
+            "id": "depo",
+            "name": {
+              "tr": "Depo",
+              "en": "Warehouse",
+              "ar": "المستودع"
+            }
+          }
+        ]
+      },
+      "data": [
+        {
+          "img": "yedekparca-3-hero-depo.webp",
+          "cat": "depo",
+          "w": 800,
+          "h": 600,
+          "title": {
+            "tr": "Depo rafları",
+            "en": "Warehouse shelves",
+            "ar": "رفوف المستودع"
+          },
+          "alt": {
+            "tr": "Kolilerle dolu depo rafları",
+            "en": "Warehouse shelves full of boxes",
+            "ar": "رفوف مستودع مليئة بالصناديق"
+          }
+        },
+        {
+          "img": "yedekparca-3-tezgah.webp",
+          "cat": "depo",
+          "w": 800,
+          "h": 600,
+          "title": {
+            "tr": "Satış tezgâhı",
+            "en": "Sales counter",
+            "ar": "طاولة البيع"
+          },
+          "alt": {
+            "tr": "Parça satış tezgâhı",
+            "en": "A parts sales counter",
+            "ar": "طاولة بيع قطع"
+          }
+        },
+        {
+          "img": "yedekparca-3-balata.webp",
+          "cat": "parca",
+          "w": 800,
+          "h": 600,
+          "title": {
+            "tr": "Fren balataları",
+            "en": "Brake pads",
+            "ar": "فحمات الفرامل"
+          },
+          "alt": {
+            "tr": "Düzenli dizilmiş fren balataları",
+            "en": "Neatly arranged brake pads",
+            "ar": "فحمات فرامل مرتبة"
+          }
+        },
+        {
+          "img": "yedekparca-3-filtre.webp",
+          "cat": "parca",
+          "w": 800,
+          "h": 800,
+          "title": {
+            "tr": "Filtreler",
+            "en": "Filters",
+            "ar": "الفلاتر"
+          },
+          "alt": {
+            "tr": "Yağ ve hava filtreleri",
+            "en": "Oil and air filters",
+            "ar": "فلاتر زيت وهواء"
+          }
+        },
+        {
+          "img": "yedekparca-3-amortisor.webp",
+          "cat": "parca",
+          "w": 600,
+          "h": 800,
+          "title": {
+            "tr": "Amortisör",
+            "en": "Shock absorber",
+            "ar": "ممتص صدمات"
+          },
+          "alt": {
+            "tr": "Süspansiyon amortisörleri",
+            "en": "Suspension shock absorbers",
+            "ar": "ممتصات صدمات التعليق"
+          }
+        },
+        {
+          "img": "yedekparca-3-yag.webp",
+          "cat": "parca",
+          "w": 800,
+          "h": 600,
+          "title": {
+            "tr": "Motor yağları",
+            "en": "Engine oils",
+            "ar": "زيوت المحرك"
+          },
+          "alt": {
+            "tr": "Raflarda markasız motor yağı bidonları",
+            "en": "Unbranded engine-oil cans on shelves",
+            "ar": "علب زيت محرك بدون علامة على الرفوف"
+          }
+        }
+      ],
+      "id": "ex14ds",
+      "path": "galeri-masonry",
+      "local": "body",
+      "index": 15
+    },
+    {
+      "name": "Randevu / Rezervasyon Formu",
+      "description": "Statik randevu ve rezervasyon sihirbazı (30 Eki 2026): hizmet → uzman → tarih → saat → bilgi → onay; masa kipi (kişi sayısı + bölüm) ve gösterim kipi. Sunucusuz: gönderim WhatsApp hazır mesaj, mailto veya .ics dosyası. Kendi takvimi (Pazartesi/Cumartesi hafta başı, kapalı günler, mola, bekleme günü), üç dil (tr/en/ar, RTL), KVKK onayı, demo kipinde tarayıcıda 'randevularım' listesi.",
+      "version": "1.0.0",
+      "icon": "event_available",
+      "category": "randevu",
+      "tags": [
+        "randevu",
+        "rezervasyon",
+        "takvim",
+        "form",
+        "whatsapp",
+        "ics"
+      ],
+      "desing": {
+        "max": "960px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 18%, transparent)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #fff))",
+        "errcolor": "color-mix(in srgb, #c81e1e 72%, var(--mx-site-text, #1b1b1b))",
+        "mode": "randevu",
+        "submit": "whatsapp",
+        "demo": true,
+        "weekStart": "auto",
+        "leadDays": 0,
+        "maxDays": 45,
+        "maxPartySize": 8,
+        "masaDuration": 90,
+        "requireEmail": false,
+        "phone": "+90 342 000 00 00",
+        "email": "stok@yesilvites.example",
+        "location": {
+          "tr": "Sanayi Sitesi 4. Blok No: 12, Şehitkamil, Gaziantep (kurgusal adres)",
+          "en": "12 Block 4, Industrial Estate, Sehitkamil, Gaziantep (fictional address)",
+          "ar": "المجمع الصناعي، المبنى 4 رقم 12، شهيد كامل، غازي عنتاب (عنوان افتراضي)"
+        },
+        "badge": {
+          "tr": "Stok sorma",
+          "en": "Stock enquiry",
+          "ar": "استعلام المخزون"
+        },
+        "title": {
+          "tr": "Parça için stok sorun",
+          "en": "Ask about stock for a part",
+          "ar": "استعلم عن مخزون قطعة"
+        },
+        "description": {
+          "tr": "Parça grubunu ve uygun günü seçin; talebiniz bu demo sitede yalnızca tarayıcınızda oluşturulur.",
+          "en": "Choose a part group and a convenient day; on this demo site your request is created only in your browser.",
+          "ar": "اختر مجموعة القطعة واليوم المناسب؛ يُنشأ طلبك في متصفحك فقط."
+        },
+        "noscript": {
+          "tr": "Randevu formunu kullanmak için tarayıcınızda JavaScript açık olmalıdır. Bunun yerine bizi arayabilirsiniz.",
+          "en": "JavaScript must be enabled in your browser to use the booking form. You can call us instead.",
+          "ar": "يجب تفعيل JavaScript في المتصفح لاستخدام نموذج الحجز. يمكنك الاتصال بنا بدلًا من ذلك."
+        },
+        "services": [
+          {
+            "id": "s1",
+            "name": {
+              "tr": "Fren parçaları",
+              "en": "Brake parts",
+              "ar": "قطع الفرامل"
+            },
+            "duration": 15
+          },
+          {
+            "id": "s2",
+            "name": {
+              "tr": "Filtre ve yağ",
+              "en": "Filters and oil",
+              "ar": "الفلاتر والزيت"
+            },
+            "duration": 15
+          },
+          {
+            "id": "s3",
+            "name": {
+              "tr": "Motor parçaları",
+              "en": "Engine parts",
+              "ar": "قطع المحرك"
+            },
+            "duration": 30
+          },
+          {
+            "id": "s4",
+            "name": {
+              "tr": "Süspansiyon parçaları",
+              "en": "Suspension parts",
+              "ar": "قطع التعليق"
+            },
+            "duration": 30
+          }
+        ],
+        "staff": [
+          {
+            "id": "p1",
+            "name": {
+              "tr": "Elif Yıldız",
+              "en": "Elif Yildiz",
+              "ar": "إليف يلدز"
+            },
+            "role": {
+              "tr": "Kıdemli danışman",
+              "en": "Senior advisor",
+              "ar": "مستشارة أولى"
+            },
+            "services": [
+              "s1",
+              "s2",
+              "s3"
+            ]
+          },
+          {
+            "id": "p2",
+            "name": {
+              "tr": "Murat Kaya",
+              "en": "Murat Kaya",
+              "ar": "مراد قايا"
+            },
+            "role": {
+              "tr": "Danışman",
+              "en": "Advisor",
+              "ar": "مستشار"
+            },
+            "services": [
+              "s1",
+              "s2"
+            ]
+          }
+        ],
+        "sections": [
+          {
+            "id": "ic",
+            "name": {
+              "tr": "İç salon",
+              "en": "Indoor",
+              "ar": "الصالة الداخلية"
+            }
+          },
+          {
+            "id": "bahce",
+            "name": {
+              "tr": "Bahçe",
+              "en": "Garden",
+              "ar": "الحديقة"
+            }
+          }
+        ],
+        "hours": {
+          "days": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "start": "08:30",
+          "end": "17:30",
+          "slot": 30,
+          "breaks": []
+        },
+        "closed": [
+          "2026-12-31",
+          "2027-01-01"
+        ],
+        "kvkk": {
+          "text": {
+            "tr": "Kişisel verilerimin bu talebin oluşturulması amacıyla işlenmesine ilişkin aydınlatma metnini okudum, anladım.",
+            "en": "I have read and understood the privacy notice on how my personal data is processed to create this request.",
+            "ar": "لقد قرأت إشعار الخصوصية المتعلق بمعالجة بياناتي الشخصية لإنشاء هذا الطلب وفهمته."
+          },
+          "href": "kisiselveriler"
+        },
+        "successText": {
+          "tr": "Talebiniz alındı. Stok ve teslim süresi size bildirilecektir.",
+          "en": "Your request has been received. Stock and delivery time will be confirmed to you.",
+          "ar": "تم استلام طلبك، وسيُبلَّغ إليك المخزون ومدة التسليم."
+        },
+        "ui": {
+          "stepsLabel": {
+            "tr": "Adımlar",
+            "en": "Steps",
+            "ar": "الخطوات"
+          },
+          "stepOf": {
+            "tr": "Adım {n} / {m}",
+            "en": "Step {n} of {m}",
+            "ar": "الخطوة {n} من {m}"
+          },
+          "s_service": {
+            "tr": "Hizmet",
+            "en": "Service",
+            "ar": "الخدمة"
+          },
+          "s_staff": {
+            "tr": "Uzman",
+            "en": "Specialist",
+            "ar": "المختص"
+          },
+          "s_party": {
+            "tr": "Kişi",
+            "en": "Guests",
+            "ar": "الضيوف"
+          },
+          "s_date": {
+            "tr": "Tarih",
+            "en": "Date",
+            "ar": "التاريخ"
+          },
+          "s_time": {
+            "tr": "Saat",
+            "en": "Time",
+            "ar": "الوقت"
+          },
+          "s_info": {
+            "tr": "Bilgiler",
+            "en": "Details",
+            "ar": "البيانات"
+          },
+          "s_confirm": {
+            "tr": "Onay",
+            "en": "Confirm",
+            "ar": "التأكيد"
+          },
+          "back": {
+            "tr": "Geri",
+            "en": "Back",
+            "ar": "رجوع"
+          },
+          "next": {
+            "tr": "Devam",
+            "en": "Continue",
+            "ar": "متابعة"
+          },
+          "reqNote": {
+            "tr": "* ile işaretli alanlar zorunludur.",
+            "en": "Fields marked * are required.",
+            "ar": "الحقول المميزة بعلامة * إلزامية."
+          },
+          "t_service": {
+            "tr": "Hizmet seçin",
+            "en": "Choose a service",
+            "ar": "اختر الخدمة"
+          },
+          "minUnit": {
+            "tr": "{n} dk",
+            "en": "{n} min",
+            "ar": "{n} دقيقة"
+          },
+          "t_staff": {
+            "tr": "Uzman seçin",
+            "en": "Choose a specialist",
+            "ar": "اختر المختص"
+          },
+          "anyStaff": {
+            "tr": "Fark etmez",
+            "en": "No preference",
+            "ar": "لا تفضيل"
+          },
+          "anyStaffHint": {
+            "tr": "Uygun olan uzman atanır.",
+            "en": "The first available specialist is assigned.",
+            "ar": "يُسنَد الموعد إلى أول مختص متاح."
+          },
+          "t_party": {
+            "tr": "Kaç kişisiniz?",
+            "en": "How many guests?",
+            "ar": "كم عدد الضيوف؟"
+          },
+          "partyMinus": {
+            "tr": "Kişi sayısını azalt",
+            "en": "Decrease guests",
+            "ar": "تقليل عدد الضيوف"
+          },
+          "partyPlus": {
+            "tr": "Kişi sayısını artır",
+            "en": "Increase guests",
+            "ar": "زيادة عدد الضيوف"
+          },
+          "partyCount": {
+            "tr": {
+              "one": "{n} kişi",
+              "other": "{n} kişi"
+            },
+            "en": {
+              "one": "{n} guest",
+              "other": "{n} guests"
+            },
+            "ar": {
+              "zero": "{n} ضيف",
+              "one": "ضيف واحد",
+              "two": "ضيفان",
+              "few": "{n} ضيوف",
+              "many": "{n} ضيفًا",
+              "other": "{n} ضيف"
+            }
+          },
+          "groupHint": {
+            "tr": "{n} kişiden büyük gruplar için lütfen bizi arayın.",
+            "en": "For groups larger than {n}, please call us.",
+            "ar": "للمجموعات التي يزيد عددها عن {n}، يُرجى الاتصال بنا."
+          },
+          "t_section": {
+            "tr": "Bölüm tercihi",
+            "en": "Seating preference",
+            "ar": "تفضيل الجلسة"
+          },
+          "anySection": {
+            "tr": "Fark etmez",
+            "en": "No preference",
+            "ar": "لا تفضيل"
+          },
+          "t_date": {
+            "tr": "Tarih seçin",
+            "en": "Choose a date",
+            "ar": "اختر التاريخ"
+          },
+          "prevMonth": {
+            "tr": "Önceki ay",
+            "en": "Previous month",
+            "ar": "الشهر السابق"
+          },
+          "nextMonth": {
+            "tr": "Sonraki ay",
+            "en": "Next month",
+            "ar": "الشهر التالي"
+          },
+          "calHint": {
+            "tr": "Gezinmek için ok tuşlarını, seçmek için Enter tuşunu kullanın. Kapalı günler seçilemez.",
+            "en": "Use the arrow keys to move and Enter to select. Unavailable days cannot be chosen.",
+            "ar": "استخدم مفاتيح الأسهم للتنقل ومفتاح Enter للاختيار. لا يمكن اختيار الأيام غير المتاحة."
+          },
+          "dayUnavailable": {
+            "tr": "uygun değil",
+            "en": "unavailable",
+            "ar": "غير متاح"
+          },
+          "selectedDate": {
+            "tr": "Seçilen tarih: {d}",
+            "en": "Selected date: {d}",
+            "ar": "التاريخ المختار: {d}"
+          },
+          "t_time": {
+            "tr": "Saat seçin",
+            "en": "Choose a time",
+            "ar": "اختر الوقت"
+          },
+          "timesFor": {
+            "tr": "{d} için uygun saatler",
+            "en": "Available times for {d}",
+            "ar": "الأوقات المتاحة ليوم {d}"
+          },
+          "p_morning": {
+            "tr": "Sabah",
+            "en": "Morning",
+            "ar": "الصباح"
+          },
+          "p_afternoon": {
+            "tr": "Öğleden sonra",
+            "en": "Afternoon",
+            "ar": "بعد الظهر"
+          },
+          "p_evening": {
+            "tr": "Akşam",
+            "en": "Evening",
+            "ar": "المساء"
+          },
+          "slotTaken": {
+            "tr": "dolu",
+            "en": "booked",
+            "ar": "محجوز"
+          },
+          "noSlots": {
+            "tr": "Bu tarihte uygun saat kalmadı. Lütfen başka bir gün seçin.",
+            "en": "No times are left on this date. Please choose another day.",
+            "ar": "لا توجد أوقات متاحة في هذا اليوم. يُرجى اختيار يوم آخر."
+          },
+          "t_info": {
+            "tr": "İletişim bilgileriniz",
+            "en": "Your contact details",
+            "ar": "بيانات التواصل"
+          },
+          "fName": {
+            "tr": "Ad soyad",
+            "en": "Full name",
+            "ar": "الاسم الكامل"
+          },
+          "fPhone": {
+            "tr": "Telefon",
+            "en": "Phone",
+            "ar": "رقم الهاتف"
+          },
+          "fEmail": {
+            "tr": "E-posta",
+            "en": "E-mail",
+            "ar": "البريد الإلكتروني"
+          },
+          "fEmailOpt": {
+            "tr": "E-posta (isteğe bağlı)",
+            "en": "E-mail (optional)",
+            "ar": "البريد الإلكتروني (اختياري)"
+          },
+          "fNote": {
+            "tr": "Not (isteğe bağlı)",
+            "en": "Note (optional)",
+            "ar": "ملاحظة (اختياري)"
+          },
+          "eService": {
+            "tr": "Lütfen bir hizmet seçin.",
+            "en": "Please choose a service.",
+            "ar": "يُرجى اختيار خدمة."
+          },
+          "eDate": {
+            "tr": "Lütfen uygun bir tarih seçin.",
+            "en": "Please choose an available date.",
+            "ar": "يُرجى اختيار تاريخ متاح."
+          },
+          "eTime": {
+            "tr": "Lütfen bir saat seçin.",
+            "en": "Please choose a time.",
+            "ar": "يُرجى اختيار وقت."
+          },
+          "eName": {
+            "tr": "Lütfen adınızı ve soyadınızı yazın.",
+            "en": "Please enter your full name.",
+            "ar": "يُرجى كتابة اسمك الكامل."
+          },
+          "ePhone": {
+            "tr": "Geçerli bir telefon numarası yazın.",
+            "en": "Please enter a valid phone number.",
+            "ar": "يُرجى كتابة رقم هاتف صحيح."
+          },
+          "eEmail": {
+            "tr": "Geçerli bir e-posta adresi yazın.",
+            "en": "Please enter a valid e-mail address.",
+            "ar": "يُرجى كتابة بريد إلكتروني صحيح."
+          },
+          "eKvkk": {
+            "tr": "Devam etmek için aydınlatma metnini onaylamanız gerekir.",
+            "en": "You need to accept the privacy notice to continue.",
+            "ar": "يجب الموافقة على إشعار الخصوصية للمتابعة."
+          },
+          "t_confirm": {
+            "tr": "Özet ve onay",
+            "en": "Review and confirm",
+            "ar": "المراجعة والتأكيد"
+          },
+          "sum_service": {
+            "tr": "Hizmet",
+            "en": "Service",
+            "ar": "الخدمة"
+          },
+          "sum_staff": {
+            "tr": "Uzman",
+            "en": "Specialist",
+            "ar": "المختص"
+          },
+          "sum_party": {
+            "tr": "Kişi sayısı",
+            "en": "Guests",
+            "ar": "عدد الضيوف"
+          },
+          "sum_section": {
+            "tr": "Bölüm",
+            "en": "Seating",
+            "ar": "الجلسة"
+          },
+          "sum_date": {
+            "tr": "Tarih",
+            "en": "Date",
+            "ar": "التاريخ"
+          },
+          "sum_time": {
+            "tr": "Saat",
+            "en": "Time",
+            "ar": "الوقت"
+          },
+          "sum_name": {
+            "tr": "Ad soyad",
+            "en": "Name",
+            "ar": "الاسم"
+          },
+          "sum_phone": {
+            "tr": "Telefon",
+            "en": "Phone",
+            "ar": "الهاتف"
+          },
+          "sum_email": {
+            "tr": "E-posta",
+            "en": "E-mail",
+            "ar": "البريد الإلكتروني"
+          },
+          "sum_note": {
+            "tr": "Not",
+            "en": "Note",
+            "ar": "ملاحظة"
+          },
+          "kvkkLink": {
+            "tr": "Aydınlatma metni",
+            "en": "Privacy notice",
+            "ar": "إشعار الخصوصية"
+          },
+          "submit_whatsapp": {
+            "tr": "WhatsApp ile gönder",
+            "en": "Send via WhatsApp",
+            "ar": "إرسال عبر واتساب"
+          },
+          "submit_mailto": {
+            "tr": "E-posta ile gönder",
+            "en": "Send by e-mail",
+            "ar": "إرسال بالبريد الإلكتروني"
+          },
+          "submit_ics": {
+            "tr": "Takvim dosyasını indir",
+            "en": "Download calendar file",
+            "ar": "تنزيل ملف التقويم"
+          },
+          "showcaseNote": {
+            "tr": "Bu bölüm bir gösterimdir: girdiğiniz bilgiler hiçbir yere gönderilmez. Gerçek talep için bizi arayabilirsiniz.",
+            "en": "This is a showcase: nothing you enter is sent anywhere. To make a real request, please call us.",
+            "ar": "هذا القسم للعرض فقط: لا تُرسَل أي بيانات تدخلها. لتقديم طلب فعلي يُرجى الاتصال بنا."
+          },
+          "callUs": {
+            "tr": "Bizi arayın",
+            "en": "Call us",
+            "ar": "اتصل بنا"
+          },
+          "restart": {
+            "tr": "Başa dön",
+            "en": "Start over",
+            "ar": "العودة إلى البداية"
+          },
+          "doneTitle_randevu": {
+            "tr": "Randevu talebiniz hazır",
+            "en": "Your appointment request is ready",
+            "ar": "طلب موعدك جاهز"
+          },
+          "doneTitle_masa": {
+            "tr": "Rezervasyon talebiniz hazır",
+            "en": "Your reservation request is ready",
+            "ar": "طلب حجزك جاهز"
+          },
+          "doneHint_whatsapp": {
+            "tr": "Mesaj WhatsApp'ta hazır olarak açıldı. Talebin bize ulaşması için mesajı göndermeyi unutmayın.",
+            "en": "The message opened in WhatsApp, ready to send. Remember to send it so your request reaches us.",
+            "ar": "فُتحت الرسالة جاهزة في واتساب. لا تنسَ إرسالها كي يصلنا طلبك."
+          },
+          "doneHint_mailto": {
+            "tr": "E-posta uygulamanızda hazır bir taslak açıldı. Göndermeyi unutmayın.",
+            "en": "A draft e-mail opened in your mail app. Remember to send it.",
+            "ar": "فُتحت مسودة رسالة في تطبيق البريد. لا تنسَ إرسالها."
+          },
+          "doneHint_ics": {
+            "tr": "Takvim dosyası indirildi. Kaydı takvim uygulamanıza ekleyebilirsiniz.",
+            "en": "The calendar file was downloaded. You can add the booking to your calendar app.",
+            "ar": "تم تنزيل ملف التقويم. يمكنك إضافة الحجز إلى تطبيق التقويم."
+          },
+          "reopen": {
+            "tr": "Mesajı yeniden aç",
+            "en": "Open the message again",
+            "ar": "فتح الرسالة مرة أخرى"
+          },
+          "reopen_ics": {
+            "tr": "Dosyayı yeniden indir",
+            "en": "Download again",
+            "ar": "إعادة التنزيل"
+          },
+          "addCal": {
+            "tr": "Takvime ekle",
+            "en": "Add to calendar",
+            "ar": "إضافة إلى التقويم"
+          },
+          "newBooking_randevu": {
+            "tr": "Yeni randevu",
+            "en": "New appointment",
+            "ar": "موعد جديد"
+          },
+          "newBooking_masa": {
+            "tr": "Yeni rezervasyon",
+            "en": "New reservation",
+            "ar": "حجز جديد"
+          },
+          "demoNote": {
+            "tr": "Demo: bilgileriniz yalnızca bu tarayıcıda saklanır, hiçbir sunucuya gönderilmez.",
+            "en": "Demo: your details stay in this browser only and are never sent to a server.",
+            "ar": "عرض تجريبي: تبقى بياناتك في هذا المتصفح فقط ولا تُرسَل إلى أي خادم."
+          },
+          "myTitle_randevu": {
+            "tr": "Randevularım",
+            "en": "My appointments",
+            "ar": "مواعيدي"
+          },
+          "myTitle_masa": {
+            "tr": "Rezervasyonlarım",
+            "en": "My reservations",
+            "ar": "حجوزاتي"
+          },
+          "cancel": {
+            "tr": "İptal et",
+            "en": "Cancel",
+            "ar": "إلغاء"
+          },
+          "cancelAria": {
+            "tr": "{d} saat {t} kaydını iptal et",
+            "en": "Cancel the booking on {d} at {t}",
+            "ar": "إلغاء الحجز بتاريخ {d} الساعة {t}"
+          },
+          "cancelled": {
+            "tr": "Kayıt iptal edildi.",
+            "en": "Booking cancelled.",
+            "ar": "تم إلغاء الحجز."
+          },
+          "svcFallback_randevu": {
+            "tr": "Randevu",
+            "en": "Appointment",
+            "ar": "موعد"
+          },
+          "msg_randevu_head": {
+            "tr": "Merhaba, {name} adına {date} saat {time} için {service} randevusu almak istiyorum.",
+            "en": "Hello, I would like to book {service} on {date} at {time} under the name {name}.",
+            "ar": "مرحبًا، أود حجز موعد ({service}) بتاريخ {date} الساعة {time} باسم {name}."
+          },
+          "msg_randevu_head_nosvc": {
+            "tr": "Merhaba, {name} adına {date} saat {time} için randevu almak istiyorum.",
+            "en": "Hello, I would like to book an appointment on {date} at {time} under the name {name}.",
+            "ar": "مرحبًا، أود حجز موعد بتاريخ {date} الساعة {time} باسم {name}."
+          },
+          "msg_masa_head": {
+            "tr": "Merhaba, {name} adına {date} saat {time} için {party} masa rezervasyonu yapmak istiyorum.",
+            "en": "Hello, I would like to reserve a table for {party} on {date} at {time} under the name {name}.",
+            "ar": "مرحبًا، أود حجز طاولة لـ {party} بتاريخ {date} الساعة {time} باسم {name}."
+          },
+          "msg_staff": {
+            "tr": "Tercih edilen uzman: {staff}",
+            "en": "Preferred specialist: {staff}",
+            "ar": "المختص المفضل: {staff}"
+          },
+          "msg_section": {
+            "tr": "Bölüm: {section}",
+            "en": "Seating: {section}",
+            "ar": "الجلسة: {section}"
+          },
+          "msg_phone": {
+            "tr": "Telefon: {phone}",
+            "en": "Phone: {phone}",
+            "ar": "الهاتف: {phone}"
+          },
+          "msg_email": {
+            "tr": "E-posta: {email}",
+            "en": "E-mail: {email}",
+            "ar": "البريد الإلكتروني: {email}"
+          },
+          "msg_note": {
+            "tr": "Not: {note}",
+            "en": "Note: {note}",
+            "ar": "ملاحظة: {note}"
+          },
+          "mailSubject_randevu": {
+            "tr": "Randevu talebi – {name}",
+            "en": "Appointment request – {name}",
+            "ar": "طلب موعد – {name}"
+          },
+          "mailSubject_masa": {
+            "tr": "Rezervasyon talebi – {name}",
+            "en": "Reservation request – {name}",
+            "ar": "طلب حجز – {name}"
+          },
+          "icsSummary_randevu": {
+            "tr": "Randevu: {service}",
+            "en": "Appointment: {service}",
+            "ar": "موعد: {service}"
+          },
+          "icsSummary_masa": {
+            "tr": "Masa rezervasyonu – {party}",
+            "en": "Table reservation – {party}",
+            "ar": "حجز طاولة – {party}"
+          }
+        }
+      },
+      "id": "z0ys57",
+      "path": "randevu-formu",
+      "local": "body",
+      "data": [],
+      "index": 16
+    },
+    {
+      "name": "Page Desing 5",
+      "desing": {
+        "stil": "ikon-ustte-yuvarlak",
+        "height": "200",
+        "opacity": "0.5",
+        "font-size": "32",
+        "backgroundcolor": "#000",
+        "menu-active": "var(--mx-site-primary, #2563eb)",
+        "activetext": "#fff",
+        "textcolor": "#fff",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "border_radius": "8px",
+        "card_shadow": "0 10px 28px rgba(0, 0, 0, 0.08)",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "colortitle": "var(--mx-site-text, #1b1b1b)",
+        "coloractive": "var(--mx-site-primary, #2563eb)",
+        "ui": {
+          "tr": {
+            "home": "Anasayfa",
+            "products": "Sayfalar",
+            "dimensions": "Ölçüler",
+            "dimNote": "Standart üretim referansıdır; proje bazında özelleştirilebilir.",
+            "quote": "İletişim",
+            "whatsapp": "WhatsApp",
+            "prev": "Önceki",
+            "next": "Sonraki"
+          },
+          "en": {
+            "home": "Home",
+            "products": "Pages",
+            "dimensions": "Dimensions",
+            "dimNote": "Standard production reference; customizable per project.",
+            "quote": "Contact",
+            "whatsapp": "WhatsApp",
+            "prev": "Previous",
+            "next": "Next"
+          },
+          "ar": {
+            "home": "الرئيسية",
+            "products": "الصفحات",
+            "dimensions": "الأبعاد",
+            "dimNote": "مرجع إنتاج قياسي؛ قابل للتخصيص حسب المشروع.",
+            "quote": "اتصل بنا",
+            "whatsapp": "واتساب",
+            "prev": "السابق",
+            "next": "التالي"
+          }
+        },
+        "noTitle": {
+          "tr": "Başlık Yok",
+          "en": "No title",
+          "ar": "بدون عنوان"
+        },
+        "productNavAria": {
+          "tr": "Ürün navigasyonu",
+          "en": "Product navigation",
+          "ar": "تنقل المنتج"
+        }
+      },
+      "category": "page",
+      "description": "Sayfa basligi, yan menu ve icerik alani. Urun detayinda breadcrumb, olcu kartlari, teklif/WhatsApp CTA, onceki/sonraki urun navigasyonu. Kategori menusu ve responsive slide-in menu. Görsel varyant desing.stil (31 Eki 2026, yan menü bağlantıları): \"\" klasik (kutulu liste, bugünkü görünüm) · \"ikon-ustte-yuvarlak\" (ortalı karo, üstte daire ikon) · \"yatay-kart\" (ikon solda/RTL sağda, metin yanında, ayrı kartlar) · \"kenar-cizgili\" (kutu yok, başta ince çizgi; hover/aktifte primary çizgi ve içe kayma). Kart zemini bgcolor (31 Eki) korunur; eklenen renkler var(--mx-site-primary) türevi.",
+      "version": "1.4.0",
+      "icon": "web",
+      "id": "1ve9aj",
+      "path": "page-desing-5",
+      "local": "body",
+      "data": [],
+      "index": 17
+    },
+    {
+      "name": "Demo Bandı",
+      "description": "Demo sitelerin her sayfasının üstünde duran, kapatılamaz bilgi şeridi: «Bu bir demo sitedir» uyarısı ve «Bu temayı iste» bağlantısı. Sayfanın en üstüne yapışır (position:sticky), sabit menüleri bant yüksekliği kadar aşağı iter (--mx-demo-bandi-h). Üç dil (TR/EN/AR), Arapçada RTL, mobilde iki satıra sarar.",
+      "version": "1.0.0",
+      "icon": "info",
+      "category": "demo",
+      "tags": [
+        "demo",
+        "bant",
+        "uyarı",
+        "banner",
+        "rtl"
+      ],
+      "desing": {
+        "tone": "info",
+        "bandBg": "",
+        "bandFg": "",
+        "ctaHref": "https://webyapar.com/temalar#yedekparca",
+        "ariaLabel": {
+          "tr": "Demo site uyarısı",
+          "en": "Demo site notice",
+          "ar": "تنبيه الموقع التجريبي"
+        },
+        "text": {
+          "tr": "Bu bir demo sitedir — içerik kurgusaldır, ödeme alınmaz",
+          "en": "This is a demo site — the content is fictional and no payment is taken",
+          "ar": "هذا موقع تجريبي — المحتوى افتراضي ولا يتم تحصيل أي مدفوعات"
+        },
+        "ctaText": {
+          "tr": "Bu temayı iste",
+          "en": "Get this theme",
+          "ar": "اطلب هذا القالب"
+        },
+        "newTabText": {
+          "tr": "(yeni sekmede açılır)",
+          "en": "(opens in a new tab)",
+          "ar": "(يفتح في علامة تبويب جديدة)"
+        }
+      },
+      "id": "nmvfcf",
+      "path": "demo-bandi",
+      "local": "header",
+      "data": [],
+      "index": 18
+    },
+    {
+      "name": {
+        "tr": "Menü 10 — Şeffaf overlay",
+        "en": "Menu 10 — Transparent overlay",
+        "ar": "القائمة 10 — شفافة فوق الهيرو"
+      },
+      "description": {
+        "tr": "Hero'nun üstüne binen şeffaf menü (position:absolute): başlangıçta şeffaf zemin + açık yazı (menutextOverlay) ve altında ince koyu gradient scrim; kaydırınca 300 ms'de katı zemine (menubg/menutext) geçer ve sabitlenir. Sayfada hero yoksa (#content ilk çocuğu data-mx-hero / *-hero değilse) baştan katı ve akışta. Mobil: tam ekran panel. desing.stil: sade | cta-butonlu (sağda vurgulu düğme). Dil seçici {{langbar}}. Üç dil + RTL.",
+        "en": "Transparent menu overlaid on the hero (position:absolute): transparent background + light text (menutextOverlay) with a thin dark gradient scrim underneath; on scroll it switches to a solid background (menubg/menutext) in 300 ms and sticks. Without a hero on the page (#content first child lacks data-mx-hero / *-hero) it starts solid and in flow. Mobile: full-screen panel. desing.stil: sade | cta-butonlu (accent button on the end side). Language switcher {{langbar}}. Three languages + RTL.",
+        "ar": "قائمة شفافة فوق الهيرو (position:absolute): خلفية شفافة ونص فاتح (menutextOverlay) مع تدرّج داكن رفيع أسفلها؛ عند التمرير تتحوّل خلال 300 ms إلى خلفية صلبة (menubg/menutext) وتثبت. إن لم توجد وحدة هيرو في الصفحة (أول عنصر في #content بلا data-mx-hero / *-hero) تبدأ صلبة وضمن التدفق. الجوال: لوحة بملء الشاشة. desing.stil: sade | cta-butonlu (زر بارز في جهة النهاية). محدد اللغة {{langbar}}. ثلاث لغات + RTL."
+      },
+      "version": "1.0.0",
+      "icon": "layers",
+      "category": "menu",
+      "tags": [
+        "menu",
+        "overlay",
+        "seffaf",
+        "transparent",
+        "hero",
+        "sticky",
+        "ar"
+      ],
+      "desing": {
+        "stil": "cta-butonlu",
+        "logo": "{{logo}}",
+        "logo_acik": "",
+        "logo_h": "52px",
+        "max": "1200px",
+        "showlang": true,
+        "menubg": "var(--mx-site-bg, #ffffff)",
+        "menutext": "var(--mx-site-text, #1b1b1b)",
+        "menutextOverlay": "#ffffff",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "border": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 14%, transparent)",
+        "cta": {
+          "tr": "Stok sor",
+          "en": "Ask about stock",
+          "ar": "استعلم عن المخزون"
+        },
+        "cta_url": "stok-sor"
+      },
+      "data": [],
+      "id": "387ntw",
+      "path": "menu-10",
+      "local": "header",
+      "index": 19
+    },
+    {
+      "name": {
+        "tr": "Slider Ken Burns",
+        "en": "Ken Burns Slider",
+        "ar": "سلايدر كين بيرنز"
+      },
+      "description": {
+        "tr": "Sıfır bağımlılıklı tam genişlik slider (Swiper yok): görsel yavaş yakınlaşma/kayma (CSS keyframes 10 sn, reduced-motion'da kapalı), her slaytta eyebrow + h2 + metin + CTA ve metin giriş animasyonu; nokta + ok navigasyon, klavye ←/→, dokunma kaydırma, otomatik oynatma durdur/başlat düğmesi (hover/odakta duraklar, reduced-motion'da kapalı). data[] = [{img, alt{}, eyebrow{}, title{}, text{}, cta{}, url}]. desing.stil: tam | kart (içerik yarı saydam kartta) | bolunmus (görsel bitiş tarafında, metin düz zeminde). Yükseklik desing.yukseklik (vh, min 420px). Üç dil + RTL.",
+        "en": "Zero-dependency full-width slider (no Swiper): slow image zoom/pan (CSS keyframes 10 s, off under reduced-motion), eyebrow + h2 + text + CTA per slide with text entrance animation; dot + arrow navigation, keyboard ←/→, touch swipe, autoplay pause/play button (pauses on hover/focus, off under reduced-motion). data[] = [{img, alt{}, eyebrow{}, title{}, text{}, cta{}, url}]. desing.stil: tam | kart (content in a translucent card) | bolunmus (image on the end side, text on a solid background). Height desing.yukseklik (vh, min 420px). Three languages + RTL.",
+        "ar": "سلايدر بعرض كامل بدون أي تبعيات (بلا Swiper): تقريب/تحريك بطيء للصورة (CSS keyframes 10 ث، يتوقف عند تقليل الحركة)، في كل شريحة تسمية + h2 + نص + زر مع حركة دخول للنص؛ تنقّل بالنقاط والأسهم، لوحة المفاتيح ←/→، سحب باللمس، زر إيقاف/تشغيل التشغيل التلقائي (يتوقف عند التحويم/التركيز، ومعطّل عند تقليل الحركة). data[] = [{img, alt{}, eyebrow{}, title{}, text{}, cta{}, url}]. desing.stil: tam | kart (المحتوى في بطاقة شبه شفافة) | bolunmus (الصورة في جهة النهاية والنص على خلفية صلبة). الارتفاع desing.yukseklik (vh، الحد الأدنى 420px). ثلاث لغات + RTL."
+      },
+      "version": "1.0.0",
+      "icon": "slideshow",
+      "category": "slider",
+      "tags": [
+        "slider",
+        "kenburns",
+        "ken-burns",
+        "karusel",
+        "hero",
+        "sifir-bagimlilik",
+        "ar"
+      ],
+      "desing": {
+        "stil": "tam",
+        "yukseklik": 76,
+        "sure": 6500,
+        "otomatik": true,
+        "max": "1200px",
+        "overlay": "color-mix(in srgb, var(--mx-site-primary, #2563eb) 25%, #0b1220)",
+        "overlayText": "#ffffff",
+        "bg": "var(--mx-site-bg, #ffffff)",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "text": "var(--mx-site-text, #1b1b1b)",
+        "muted": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "radius": "16px",
+        "aria_label": {
+          "tr": "Tanıtım slaytları",
+          "en": "Featured slides",
+          "ar": "شرائح تعريفية"
+        },
+        "prev_label": {
+          "tr": "Önceki slayt",
+          "en": "Previous slide",
+          "ar": "الشريحة السابقة"
+        },
+        "next_label": {
+          "tr": "Sonraki slayt",
+          "en": "Next slide",
+          "ar": "الشريحة التالية"
+        },
+        "dot_label": {
+          "tr": "{n}. slayta git",
+          "en": "Go to slide {n}",
+          "ar": "الانتقال إلى الشريحة {n}"
+        },
+        "pause_label": {
+          "tr": "Otomatik oynatmayı durdur",
+          "en": "Pause autoplay",
+          "ar": "إيقاف التشغيل التلقائي"
+        },
+        "play_label": {
+          "tr": "Otomatik oynatmayı başlat",
+          "en": "Start autoplay",
+          "ar": "بدء التشغيل التلقائي"
+        },
+        "slide_label": {
+          "tr": "{i} / {n}",
+          "en": "{i} of {n}",
+          "ar": "{i} من {n}"
+        }
+      },
+      "data": [
+        {
+          "img": "yedekparca-3-tezgah.webp",
+          "alt": {
+            "tr": "Parça satış tezgâhı",
+            "en": "A parts sales counter",
+            "ar": "طاولة بيع قطع"
+          },
+          "eyebrow": {
+            "tr": "Yedek parça · Stok sorma · 14 gün iade",
+            "en": "Spare parts · Stock enquiry · 14-day returns",
+            "ar": "قطع غيار · استعلام مخزون · إرجاع خلال 14 يومًا"
+          },
+          "title": {
+            "tr": "Doğru parçayı birlikte bulalım",
+            "en": "Let’s find the right part together",
+            "ar": "لنجد القطعة الصحيحة معًا"
+          },
+          "text": {
+            "tr": "Yeşil Vites Yedek Parça, OEM ve eşdeğer parçaları açıkça etiketleyen kurgusal bir demo yedek parça firmasıdır. Şasi numaranızla stok sorun, teslim süresini öğrenin.",
+            "en": "Yesil Vites Auto Parts is a fictional demo parts company that clearly labels OEM and equivalent parts. Ask about stock with your chassis number and learn the delivery time.",
+            "ar": "يشيل فيتس لقطع الغيار شركة تجريبية افتراضية توسِم القطع OEM والمكافئة بوضوح. استعلم عن المخزون برقم الشاسيه واعرف مدة التسليم."
+          },
+          "cta": {
+            "tr": "Stok sor",
+            "en": "Ask about stock",
+            "ar": "استعلم عن المخزون"
+          },
+          "url": "stok-sor"
+        },
+        {
+          "img": "yedekparca-3-hero-depo.webp",
+          "alt": {
+            "tr": "Parça satış tezgâhı",
+            "en": "A parts sales counter",
+            "ar": "طاولة بيع قطع"
+          },
+          "eyebrow": {
+            "tr": "Depo",
+            "en": "Warehouse",
+            "ar": "المستودع"
+          },
+          "title": {
+            "tr": "Altı parça grubu, izlenebilir stok",
+            "en": "Six part groups, traceable stock",
+            "ar": "ست مجموعات قطع ومخزون قابل للتتبع"
+          },
+          "text": {
+            "tr": "Fren, filtre, motor, süspansiyon, elektrik, yağlar.",
+            "en": "Brakes, filters, engine, suspension, electrics, oils.",
+            "ar": "فرامل وفلاتر ومحرك وتعليق وكهرباء وزيوت."
+          },
+          "cta": {
+            "tr": "Parça grupları",
+            "en": "Part groups",
+            "ar": "مجموعات القطع"
+          },
+          "url": "urunler"
+        },
+        {
+          "img": "yedekparca-3-amortisor.webp",
+          "alt": {
+            "tr": "Parça satış tezgâhı",
+            "en": "A parts sales counter",
+            "ar": "طاولة بيع قطع"
+          },
+          "eyebrow": {
+            "tr": "Süspansiyon",
+            "en": "Suspension",
+            "ar": "التعليق"
+          },
+          "title": {
+            "tr": "Amortisör, rotil, salıncak",
+            "en": "Shock absorbers, ball joints, control arms",
+            "ar": "ممتصات صدمات ومفاصل كروية وأذرع"
+          },
+          "text": {
+            "tr": "OEM ve eşdeğer; uygunluk kontrolü yapılmadan satılmaz.",
+            "en": "OEM and equivalent; not sold without a fitment check.",
+            "ar": "OEM ومكافئة؛ لا تُباع دون فحص الملاءمة."
+          },
+          "cta": {
+            "tr": "Garanti ve iade",
+            "en": "Warranty and returns",
+            "ar": "الضمان والإرجاع"
+          },
+          "url": "garanti-iade"
+        }
+      ],
+      "id": "o3e0zf",
+      "path": "slider-kenburns",
+      "local": "header",
+      "index": 20
+    },
+    {
+      "name": "Zigzag Özellik",
+      "description": "Görsel-metin sırası satır satır değişen (sol/sağ) özellik anlatımı: numara rozeti, h3, paragraf, mini CTA; görsel kenarında dekoratif çerçeve/gölge. Kaydırmada satırlar sırayla belirir (IntersectionObserver; reduced-motion ya da JS yoksa hep görünür). desing.stil: cerceve | yuzen | sade. RTL'de sıra kendiliğinden aynalanır. Veri: data[] = [{baslik{tr,en,ar}, metin{}, img, alt{}, url, ctaLabel{}?}]. Renkler yalnız token; koyu mod otomatik.",
+      "version": "1.0.0",
+      "icon": "view_agenda",
+      "category": "ozellik",
+      "tags": [
+        "özellik",
+        "zigzag",
+        "features",
+        "görsel-metin",
+        "ar"
+      ],
+      "desing": {
+        "stil": "yuzen",
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 16%, transparent)",
+        "radius": "20px",
+        "numara": true,
+        "eyebrow": {
+          "tr": "Hakkımızda",
+          "en": "About us",
+          "ar": "من نحن"
+        },
+        "title": {
+          "tr": "Yeşil Vites Yedek Parça",
+          "en": "Yesil Vites Auto Parts",
+          "ar": "يشيل فيتس لقطع الغيار"
+        },
+        "description": {
+          "tr": "Yeşil Vites Yedek Parça, servislere ve bireysel müşterilere doğru parçayı doğru etiketle ulaştırmayı ilke edinen kurgusal bir demo firmadır. Bu sitedeki ürünler, adresler ve bilgiler kurgusaldır.",
+          "en": "Yesil Vites Auto Parts is a fictional demo company whose principle is to deliver the right part with the right label to workshops and individual customers. Products, addresses and details on this site are fictional.",
+          "ar": "يشيل فيتس لقطع الغيار شركة تجريبية افتراضية مبدؤها إيصال القطعة الصحيحة بالوسم الصحيح إلى الورش والعملاء الأفراد. المنتجات والعناوين والبيانات في هذا الموقع افتراضية."
+        },
+        "ctaLabel": {
+          "tr": "Daha fazla",
+          "en": "Learn more",
+          "ar": "المزيد"
+        }
+      },
+      "data": [
+        {
+          "baslik": {
+            "tr": "Doğru etiket",
+            "en": "Correct labelling",
+            "ar": "وسم صحيح"
+          },
+          "metin": {
+            "tr": "OEM ve eşdeğer ayrımı her üründe yazılıdır.",
+            "en": "The OEM / equivalent distinction is stated on every item.",
+            "ar": "يُذكر التمييز بين OEM والمكافئ في كل منتج."
+          },
+          "img": "yedekparca-3-tezgah.webp",
+          "alt": {
+            "tr": "Parça satış tezgâhı",
+            "en": "A parts sales counter",
+            "ar": "طاولة بيع قطع"
+          },
+          "url": "hakkimizda"
+        },
+        {
+          "baslik": {
+            "tr": "Uygunluk kontrolü",
+            "en": "Fitment check",
+            "ar": "فحص الملاءمة"
+          },
+          "metin": {
+            "tr": "Parça, araç bilgisiyle eşleştirilmeden satılmaz.",
+            "en": "Parts are not sold without matching them to the vehicle details.",
+            "ar": "لا تُباع القطع دون مطابقتها ببيانات المركبة."
+          },
+          "img": "yedekparca-3-balata.webp",
+          "alt": {
+            "tr": "Düzenli dizilmiş fren balataları",
+            "en": "Neatly arranged brake pads",
+            "ar": "فحمات فرامل مرتبة"
+          },
+          "url": "hakkimizda"
+        },
+        {
+          "baslik": {
+            "tr": "Fren sistemi",
+            "en": "Brake system",
+            "ar": "نظام الفرامل"
+          },
+          "metin": {
+            "tr": "Balata, disk, kaliper ve fren hortumları; OEM ve eşdeğer.",
+            "en": "Pads, discs, calipers and brake hoses; OEM and equivalent.",
+            "ar": "فحمات وأقراص وكاليبرات وخراطيم فرامل؛ OEM ومكافئة."
+          },
+          "img": "yedekparca-3-filtre.webp",
+          "alt": {
+            "tr": "Yağ ve hava filtreleri",
+            "en": "Oil and air filters",
+            "ar": "فلاتر زيت وهواء"
+          },
+          "url": "urunler"
+        }
+      ],
+      "id": "az1j1p",
+      "path": "ozellik-zigzag",
+      "local": "body",
+      "index": 21
+    },
+    {
+      "name": "Sayaç Şeridi (Stats 2)",
+      "description": "Tam genişlik renkli şerit (bgcolor/textcolor ÇİFT token), 3–5 sayaç: sayılar görünürken yukarı sayar (IntersectionObserver; reduced-motion ya da JS yoksa son değer doğrudan), önek/sonek (+, %, ₺), kısa açıklama, isteğe bağlı CSS desen (noktalar | cizgiler | yok). Sayı biçimi dile göre (Arapçada Latin hane). desing.stil: serit | kartli | ayrik-cizgili. Veri: data[] = [{deger, onek, sonek, ondalik?, etiket{tr,en,ar}, aciklama{}, ikon?}]. Koyu mod paletten; RTL mantıksal CSS.",
+      "version": "1.0.0",
+      "icon": "insights",
+      "category": "stats",
+      "tags": [
+        "istatistik",
+        "sayaç",
+        "stats",
+        "counter",
+        "şerit",
+        "ar"
+      ],
+      "desing": {
+        "stil": "kartli",
+        "desen": "noktalar",
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-primary, #2563eb)",
+        "textcolor": "var(--mx-site-primary-contrast, #ffffff)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-primary-contrast, #ffffff) 90%, var(--mx-site-primary, #2563eb))",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-primary-contrast, #ffffff) 26%, transparent)",
+        "radius": "16px",
+        "sure": 1000,
+        "title": {
+          "tr": "",
+          "en": "",
+          "ar": ""
+        },
+        "description": {
+          "tr": "",
+          "en": "",
+          "ar": ""
+        }
+      },
+      "data": [
+        {
+          "deger": 6,
+          "onek": "",
+          "sonek": "",
+          "etiket": {
+            "tr": "Parça grubu",
+            "en": "Part groups",
+            "ar": "مجموعات قطع"
+          },
+          "aciklama": {
+            "tr": "",
+            "en": "",
+            "ar": ""
+          },
+          "ikon": "build"
+        },
+        {
+          "deger": 2,
+          "onek": "",
+          "sonek": "",
+          "etiket": {
+            "tr": "Etiket: OEM / eşdeğer",
+            "en": "Labels: OEM / equivalent",
+            "ar": "الوسوم: OEM / مكافئ"
+          },
+          "aciklama": {
+            "tr": "",
+            "en": "",
+            "ar": ""
+          },
+          "ikon": "sell"
+        },
+        {
+          "deger": 14,
+          "onek": "",
+          "sonek": "",
+          "etiket": {
+            "tr": "Gün iade süresi",
+            "en": "Day return window",
+            "ar": "أيام مهلة الإرجاع"
+          },
+          "aciklama": {
+            "tr": "",
+            "en": "",
+            "ar": ""
+          },
+          "ikon": "assignment_return"
+        },
+        {
+          "deger": 6,
+          "onek": "",
+          "sonek": "",
+          "etiket": {
+            "tr": "Gün hizmet (haftalık)",
+            "en": "Days a week",
+            "ar": "أيام أسبوعيًا"
+          },
+          "aciklama": {
+            "tr": "",
+            "en": "",
+            "ar": ""
+          },
+          "ikon": "calendar_month"
+        }
+      ],
+      "id": "b7qzhc",
+      "path": "stats-2",
+      "local": "body",
+      "index": 22
+    },
+    {
+      "name": "Süreç Adımları",
+      "description": "3–6 adımlık süreç anlatımı: çizgi/ok ile bağlı daire numaralar, altında başlık + metin. Aktif adım vurgusu kaydırmayla ilerler (IntersectionObserver; JS yoksa tüm adımlar düz görünür). desing.stil: yatay (çizgiyle bağlı sıra; mobilde dikey zaman çizgisi) | dikey (iki yanlı zaman çizgisi) | kartli (kart + ok ayraç). Veri: data[] = [{no?, baslik{tr,en,ar}, metin{}, ikon?}]. Renkler yalnız token; koyu mod otomatik; RTL'de ok/çizgi yönü aynalanır.",
+      "version": "1.0.0",
+      "icon": "timeline",
+      "category": "surec",
+      "tags": [
+        "süreç",
+        "adım",
+        "zaman çizgisi",
+        "process",
+        "steps",
+        "ar"
+      ],
+      "desing": {
+        "stil": "yatay",
+        "max": "1200px",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "surface2": "var(--mx-site-surface-2, #ececea)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 16%, transparent)",
+        "radius": "16px",
+        "eyebrow": {
+          "tr": "Sipariş",
+          "en": "Ordering",
+          "ar": "الطلب"
+        },
+        "title": {
+          "tr": "Parçayı bulmaktan teslime",
+          "en": "From finding the part to delivery",
+          "ar": "من إيجاد القطعة إلى التسليم"
+        },
+        "description": {
+          "tr": "Dört adımda doğru parça.",
+          "en": "The right part in four steps.",
+          "ar": "القطعة الصحيحة بأربع خطوات."
+        },
+        "stepLabel": {
+          "tr": "Adım {n}",
+          "en": "Step {n}",
+          "ar": "الخطوة {n}"
+        },
+        "listLabel": {
+          "tr": "Süreç adımları",
+          "en": "Process steps",
+          "ar": "خطوات العملية"
+        }
+      },
+      "data": [
+        {
+          "no": 1,
+          "baslik": {
+            "tr": "Araç bilgisi",
+            "en": "Vehicle details",
+            "ar": "بيانات المركبة"
+          },
+          "metin": {
+            "tr": "Şasi no ya da model-yıl-motor bilgisini paylaşın.",
+            "en": "Share the chassis number or model-year-engine details.",
+            "ar": "شارك رقم الشاسيه أو بيانات الطراز والسنة والمحرك."
+          },
+          "ikon": "forum"
+        },
+        {
+          "no": 2,
+          "baslik": {
+            "tr": "Parça eşleştirme",
+            "en": "Part matching",
+            "ar": "مطابقة القطعة"
+          },
+          "metin": {
+            "tr": "OEM ve eşdeğer seçenekler etiketiyle sunulur.",
+            "en": "OEM and equivalent options are offered with their labels.",
+            "ar": "تُقدَّم الخيارات OEM والمكافئة بوسمها."
+          },
+          "ikon": "draw"
+        },
+        {
+          "no": 3,
+          "baslik": {
+            "tr": "Stok teyidi",
+            "en": "Stock confirmation",
+            "ar": "تأكيد المخزون"
+          },
+          "metin": {
+            "tr": "Stok ve teslim süresi bildirilir.",
+            "en": "Stock and delivery time are confirmed.",
+            "ar": "يُبلَّغ المخزون ومدة التسليم."
+          },
+          "ikon": "construction"
+        },
+        {
+          "no": 4,
+          "baslik": {
+            "tr": "Teslim",
+            "en": "Delivery",
+            "ar": "التسليم"
+          },
+          "metin": {
+            "tr": "Mağazadan teslim ya da kargo.",
+            "en": "Pick-up at the store or by courier.",
+            "ar": "استلام من المتجر أو عبر الشحن."
+          },
+          "ikon": "verified"
+        }
+      ],
+      "id": "p4nkhs",
+      "path": "surec-adimlar",
+      "local": "body",
+      "index": 23
+    },
+    {
+      "name": {
+        "tr": "Yorum Karuseli 3",
+        "en": "Testimonial Carousel 3",
+        "ar": "شريط آراء العملاء 3"
+      },
+      "description": {
+        "tr": "Müşteri yorumları karuseli: yıldız + alıntı + kişi (avatar ya da baş harf, ad, unvan/şirket, isteğe bağlı logo). Otomatik kaydırma (durdur/başlat düğmesi, hover ve odakta durur, reduced-motion'da kapalı), nokta + ok, klavye (←/→), swipe (pointer). Bağımlılık yok. Üç varyant (desing.stil): kart-karusel · buyuk-alinti (tek, ortalı) · masonry (3 sütun statik duvar). Üç dil, RTL, koyu mod token'larla.",
+        "en": "Customer testimonial carousel: stars + quote + person (avatar or initials, name, role/company, optional logo). Autoplay (pause/play button, pauses on hover and focus, off under reduced-motion), dots + arrows, keyboard (←/→), swipe (pointer events). No dependencies. Three variants (desing.stil): kart-karusel · buyuk-alinti (single, centred) · masonry (static 3-column wall). Three languages, RTL, dark mode via tokens.",
+        "ar": "شريط آراء العملاء: نجوم + اقتباس + شخص (صورة أو أحرف أولى، الاسم، المسمّى/الشركة، شعار اختياري). تشغيل تلقائي (زر إيقاف/تشغيل، يتوقف عند التمرير والتركيز، معطّل عند تقليل الحركة)، نقاط وأسهم، لوحة مفاتيح، سحب. ثلاثة أنماط، ثلاث لغات، RTL، وضع داكن."
+      },
+      "version": "1.0.0",
+      "icon": "format_quote",
+      "category": "testimonial",
+      "tags": [
+        "yorum",
+        "testimonial",
+        "karusel",
+        "referans",
+        "review",
+        "ar"
+      ],
+      "desing": {
+        "max": "1200px",
+        "stil": "kart-karusel",
+        "autoplay": true,
+        "interval": 5000,
+        "bgcolor": "var(--mx-site-surface, #f6f6f4)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 70%, var(--mx-site-surface, #f6f6f4))",
+        "cardbg": "var(--mx-site-bg, #ffffff)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 14%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "starcolor": "color-mix(in srgb, var(--mx-color-warning, #d97706) 65%, var(--mx-site-text, #1b1b1b))",
+        "radius": "18px",
+        "title": {
+          "tr": "Ne diyorlar?",
+          "en": "What people say",
+          "ar": "ماذا يقولون؟"
+        },
+        "description": {
+          "tr": "Kurgusal örnek yorumlar; demo sitedir.",
+          "en": "Fictional sample reviews; this is a demo site.",
+          "ar": "آراء نموذجية افتراضية؛ هذا موقع تجريبي."
+        },
+        "regionLabel": {
+          "tr": "Müşteri yorumları",
+          "en": "Customer testimonials",
+          "ar": "آراء العملاء"
+        },
+        "prevLabel": {
+          "tr": "Önceki yorum",
+          "en": "Previous testimonial",
+          "ar": "الرأي السابق"
+        },
+        "nextLabel": {
+          "tr": "Sonraki yorum",
+          "en": "Next testimonial",
+          "ar": "الرأي التالي"
+        },
+        "pauseLabel": {
+          "tr": "Otomatik kaydırmayı durdur",
+          "en": "Pause autoplay",
+          "ar": "إيقاف التشغيل التلقائي"
+        },
+        "playLabel": {
+          "tr": "Otomatik kaydırmayı başlat",
+          "en": "Start autoplay",
+          "ar": "بدء التشغيل التلقائي"
+        },
+        "dotLabel": {
+          "tr": "{n}. sayfa",
+          "en": "Page {n}",
+          "ar": "الصفحة {n}"
+        },
+        "slideLabel": {
+          "tr": "{i} / {n}",
+          "en": "{i} of {n}",
+          "ar": "{i} من {n}"
+        },
+        "ratingLabel": {
+          "tr": "5 üzerinden {n} yıldız",
+          "en": "{n} out of 5 stars",
+          "ar": "{n} من 5 نجوم"
+        },
+        "quoteLabel": {
+          "tr": "Alıntı",
+          "en": "Quote",
+          "ar": "اقتباس"
+        }
+      },
+      "data": [
+        {
+          "name": "Usta Servis",
+          "role": {
+            "tr": "Oto servis",
+            "en": "Workshop",
+            "ar": "ورشة سيارات"
+          },
+          "company": "",
+          "text": {
+            "tr": "Şasi numarasıyla sorduk, eşdeğer ve OEM seçenekleri etiketiyle geldi; stok aynı gün teyit edildi.",
+            "en": "We asked with the chassis number; equivalent and OEM options came with their labels and stock was confirmed the same day.",
+            "ar": "استعلمنا برقم الشاسيه؛ جاءت الخيارات المكافئة وOEM بوسمها وتأكد المخزون في اليوم نفسه."
+          },
+          "rating": 5,
+          "img": "",
+          "logo": ""
+        },
+        {
+          "name": "Ali K.",
+          "role": {
+            "tr": "Bireysel müşteri",
+            "en": "Individual customer",
+            "ar": "عميل فردي"
+          },
+          "company": "",
+          "text": {
+            "tr": "Filtre setini mağazadan teslim aldım; garanti bilgisi faturada yazıyordu.",
+            "en": "I picked up the filter set at the store; the warranty details were on the invoice.",
+            "ar": "استلمت طقم الفلاتر من المتجر؛ وكانت بيانات الضمان على الفاتورة."
+          },
+          "rating": 5,
+          "img": "",
+          "logo": ""
+        },
+        {
+          "name": "Kent Filo",
+          "role": {
+            "tr": "Filo yönetimi",
+            "en": "Fleet management",
+            "ar": "إدارة أسطول"
+          },
+          "company": "",
+          "text": {
+            "tr": "Balata ve diskleri araç listemize göre eşleştirip tek seferde teslim ettiler.",
+            "en": "They matched pads and discs to our vehicle list and delivered in one go.",
+            "ar": "طابقوا الفحمات والأقراص مع قائمة مركباتنا وسلّموها دفعة واحدة."
+          },
+          "rating": 4,
+          "img": "",
+          "logo": ""
+        }
+      ],
+      "id": "ktk6vm",
+      "path": "testimonial-3",
+      "local": "body",
+      "index": 24
+    },
+    {
+      "name": "CTA Şerit 1",
+      "desing": {
+        "stil": "gradient",
+        "max": "1200px",
+        "gradient": "linear-gradient(135deg, color-mix(in srgb, var(--mx-site-primary, #2563eb) 42%, #000), color-mix(in srgb, var(--mx-site-primary, #2563eb) 24%, #000))",
+        "btnbg": "#ffffff",
+        "btncolor": "#10203A",
+        "title": {
+          "tr": "Aracınıza uygun parçayı soralım",
+          "en": "Let’s find the part for your vehicle",
+          "ar": "لنبحث عن القطعة المناسبة لمركبتك"
+        },
+        "description": {
+          "tr": "Parçalar «OEM» (araç üreticisinin onayladığı) ya da «eşdeğer» olarak açıkça etiketlenir; «orijinal» ibaresi yalnızca OEM parçada kullanılır.",
+          "en": "Parts are clearly labelled “OEM” (approved by the vehicle manufacturer) or “equivalent”; the word “original” is used only for OEM parts.",
+          "ar": "تُوسَم القطع بوضوح بأنها «OEM» (معتمدة من مصنّع المركبة) أو «مكافئة»؛ ولا تُستخدم كلمة «أصلية» إلا للقطع OEM."
+        },
+        "btn1Text": {
+          "tr": "Stok sor",
+          "en": "Ask about stock",
+          "ar": "استعلم عن المخزون"
+        },
+        "btn1Url": "stok-sor",
+        "btn2Text": {
+          "tr": "Garanti ve iade",
+          "en": "Warranty and returns",
+          "ar": "الضمان والإرجاع"
+        },
+        "btn2Url": "garanti-iade"
+      },
+      "category": "cta",
+      "description": "Harekete geçirici çağrı (CTA) şerit modülü. Gradient arka plan üzerinde başlık, açıklama ve iki buton gösterir. Buton URL'leri dil öneki olmadan pathnext (iletisim, urunler) — site routing ekler. Çok dilli metin ve animasyonlu giriş içerir. Görsel varyant desing.stil (31 Eki 2026): \"\" klasik (gradient anahtarı tam genişlik bant, bugünkü görünüm) · \"gradient\" (token gradient primary→koyu, yuvarlak köşeli iç bant, ortalı yığın, ışık daireleri, hap düğmeler) · \"kart-yuzen\" (sayfa zemininde yüzen yüzey kartı, dekoratif primary daireler, sol vurgu çizgisi). Varyant renkleri yalnız var(--mx-site-*) token çiftleri.",
+      "version": "1.2.0",
+      "icon": "campaign",
+      "id": "q5rh5l",
+      "path": "cta-1",
+      "local": "body",
+      "data": [],
+      "index": 25
+    },
+    {
+      "name": {
+        "tr": "Hızlı İletişim Kartları",
+        "en": "Quick Contact Cards",
+        "ar": "بطاقات الاتصال السريع"
+      },
+      "description": {
+        "tr": "3–4 hızlı eylem kartı: Ara (tel:), WhatsApp (wa.me hazır mesaj), E-posta (mailto:), Yol tarifi (harita bağlantısı). Her kart ikon + başlık + değer + eylem düğmesi; hover'da yükselir. Veri boş olan kart basılmaz; phone/email boşsa setting'den. Üç varyant (desing.stil): kartli · ikon-serit · dikey-liste. Üç dil, RTL, koyu mod token'larla.",
+        "en": "3–4 quick action cards: Call (tel:), WhatsApp (wa.me prefilled), E-mail (mailto:), Directions (map link). Each card has icon + title + value + action button; lifts on hover. Cards without data are omitted; phone/email fall back to setting. Three variants (desing.stil): kartli · ikon-serit · dikey-liste. Three languages, RTL, dark mode via tokens.",
+        "ar": "3–4 بطاقات إجراء سريع: اتصال (tel:)، واتساب (رسالة جاهزة)، بريد إلكتروني (mailto:)، الاتجاهات (رابط خريطة). كل بطاقة: أيقونة + عنوان + قيمة + زر. البطاقات بلا بيانات لا تُعرض. ثلاثة أنماط، ثلاث لغات، RTL، وضع داكن."
+      },
+      "version": "1.0.0",
+      "icon": "contact_phone",
+      "category": "contact",
+      "tags": [
+        "iletisim",
+        "contact",
+        "whatsapp",
+        "telefon",
+        "harita",
+        "ar"
+      ],
+      "desing": {
+        "max": "1200px",
+        "stil": "ikon-serit",
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "textcolor": "var(--mx-site-text, #1b1b1b)",
+        "mutedcolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 72%, var(--mx-site-bg, #ffffff))",
+        "surface": "var(--mx-site-surface, #f6f6f4)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 16%, transparent)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "radius": "18px",
+        "title": {
+          "tr": "Bize ulaşın",
+          "en": "Reach us",
+          "ar": "تواصل معنا"
+        },
+        "description": {
+          "tr": "Hafta içi 08:00 – 18:30 · Cumartesi 08:30 – 15:00",
+          "en": "Weekdays 08:00 – 18:30 · Saturday 08:30 – 15:00",
+          "ar": "أيام الأسبوع 08:00 – 18:30 · السبت 08:30 – 15:00"
+        },
+        "phone": "+90 342 000 00 00",
+        "whatsapp": "903420000000",
+        "email": "stok@yesilvites.example",
+        "address": {
+          "tr": "Sanayi Sitesi 4. Blok No: 12, Şehitkamil, Gaziantep (kurgusal adres)",
+          "en": "12 Block 4, Industrial Estate, Sehitkamil, Gaziantep (fictional address)",
+          "ar": "المجمع الصناعي، المبنى 4 رقم 12، شهيد كامل، غازي عنتاب (عنوان افتراضي)"
+        },
+        "mapsUrl": "",
+        "waMessage": {
+          "tr": "Merhaba, bilgi almak istiyorum.",
+          "en": "Hello, I would like some information.",
+          "ar": "مرحبًا، أرغب في الحصول على معلومات."
+        },
+        "callTitle": {
+          "tr": "Bizi Arayın",
+          "en": "Call Us",
+          "ar": "اتصل بنا"
+        },
+        "callText": {
+          "tr": "Hafta içi 08:00 – 18:30 · Cumartesi 08:30 – 15:00",
+          "en": "Weekdays 08:00 – 18:30 · Saturday 08:30 – 15:00",
+          "ar": "أيام الأسبوع 08:00 – 18:30 · السبت 08:30 – 15:00"
+        },
+        "callBtn": {
+          "tr": "Ara",
+          "en": "Call",
+          "ar": "اتصال"
+        },
+        "waTitle": {
+          "tr": "WhatsApp",
+          "en": "WhatsApp",
+          "ar": "واتساب"
+        },
+        "waText": {
+          "tr": "Hızlı yanıt için yazın",
+          "en": "Message us for a quick reply",
+          "ar": "راسلنا للحصول على رد سريع"
+        },
+        "waBtn": {
+          "tr": "Mesaj gönder",
+          "en": "Send message",
+          "ar": "إرسال رسالة"
+        },
+        "mailTitle": {
+          "tr": "E-posta",
+          "en": "E-mail",
+          "ar": "البريد الإلكتروني"
+        },
+        "mailText": {
+          "tr": "Teklif ve detaylı sorular için",
+          "en": "For quotes and detailed questions",
+          "ar": "لعروض الأسعار والأسئلة التفصيلية"
+        },
+        "mailBtn": {
+          "tr": "E-posta gönder",
+          "en": "Send e-mail",
+          "ar": "إرسال بريد"
+        },
+        "mapTitle": {
+          "tr": "Yol Tarifi",
+          "en": "Directions",
+          "ar": "الاتجاهات"
+        },
+        "mapBtn": {
+          "tr": "Haritada aç",
+          "en": "Open in maps",
+          "ar": "فتح في الخرائط"
+        },
+        "groupLabel": {
+          "tr": "Hızlı iletişim kanalları",
+          "en": "Quick contact channels",
+          "ar": "قنوات الاتصال السريع"
+        }
+      },
+      "data": [],
+      "id": "rxqfeg",
+      "path": "iletisim-kartlari",
+      "local": "body",
+      "index": 26
+    },
+    {
+      "name": {
+        "tr": "Footer 10 — Mega footer (CTA bantlı)",
+        "en": "Footer 10 — Mega footer (CTA band)",
+        "ar": "تذييل 10 — تذييل ضخم (شريط دعوة)"
+      },
+      "description": {
+        "tr": "Mega alt bilgi: üstte bülten/CTA bandı (e-posta kutusu + düğme — gönderim mailto ya da kapalı; KVKK notu), altında 5 sütun (marka + açıklama + sosyal · sayfalar (maxpages) · hizmetler · iletişim · çalışma saatleri; boş sütun basılmaz, sütun sınıfı otomatik), en altta telif + yasal bağlantılar + dil seçici + «yukarı» düğmesi. Üç varyant (desing.stil): koyu · acik · gradient-ust. Üç dil, RTL, koyu mod token'larla.",
+        "en": "Mega footer: newsletter/CTA band on top (e-mail box + button — mailto submission or disabled; privacy note), 5 columns below (brand + about + social · pages (maxpages) · services · contact · opening hours; empty columns are omitted, column class is automatic), bottom bar with copyright + legal links + language switcher + «back to top». Three variants (desing.stil): koyu · acik · gradient-ust. Three languages, RTL, dark mode via tokens.",
+        "ar": "تذييل ضخم: شريط نشرة بريدية/دعوة في الأعلى (حقل بريد + زر؛ إرسال mailto أو معطّل؛ ملاحظة خصوصية)، 5 أعمدة (العلامة + نبذة + تواصل · الصفحات · الخدمات · الاتصال · ساعات العمل)، شريط سفلي بحقوق النشر والروابط القانونية ومبدّل اللغة وزر «إلى الأعلى». ثلاثة أنماط، ثلاث لغات، RTL، وضع داكن."
+      },
+      "version": "1.0.0",
+      "icon": "footer",
+      "category": "footer",
+      "tags": [
+        "footer",
+        "bulten",
+        "newsletter",
+        "mega",
+        "ar"
+      ],
+      "desing": {
+        "stil": "koyu",
+        "showlang": true,
+        "maxpages": 8,
+        "koyubg": "color-mix(in srgb, #0f172a 86%, var(--mx-site-primary, #2563eb))",
+        "koyutext": "#f1f5f9",
+        "acikbg": "var(--mx-site-surface, #f6f6f4)",
+        "aciktext": "var(--mx-site-text, #1b1b1b)",
+        "accent": "var(--mx-site-primary, #2563eb)",
+        "accentText": "var(--mx-site-primary-contrast, #ffffff)",
+        "errcolor": "var(--mx-color-danger, #b42318)",
+        "radius": "16px",
+        "logo_maxh": "52px",
+        "logo_plate": false,
+        "about": {
+          "tr": "Yeşil Vites Yedek Parça: fren, filtre, motor ve süspansiyon parçaları; OEM ve eşdeğer etiketi, stok sorma, 14 gün iade. (Demo site)",
+          "en": "Yesil Vites Auto Parts: brake, filter, engine and suspension parts; OEM and equivalent labels, stock enquiries, 14-day returns. (Demo site)",
+          "ar": "يشيل فيتس لقطع الغيار: قطع الفرامل والفلاتر والمحرك والتعليق مع وسم OEM ومكافئ والاستعلام عن المخزون والإرجاع خلال 14 يومًا. (موقع تجريبي)"
+        },
+        "nlShow": true,
+        "nlGonderim": "mailto",
+        "nlEmail": "stok@yesilvites.example",
+        "nlTitle": {
+          "tr": "Gelişmelerden haberdar olun",
+          "en": "Stay in the loop",
+          "ar": "ابقَ على اطلاع"
+        },
+        "nlText": {
+          "tr": "Ayda bir bülten; kampanya ve yeniliklerden ilk siz haberdar olun.",
+          "en": "One newsletter a month; be the first to hear about offers and news.",
+          "ar": "نشرة واحدة شهريًا؛ كن أول من يعرف بالعروض والمستجدات."
+        },
+        "nlLabel": {
+          "tr": "E-posta adresiniz",
+          "en": "Your e-mail address",
+          "ar": "بريدك الإلكتروني"
+        },
+        "nlBtn": {
+          "tr": "Abone ol",
+          "en": "Subscribe",
+          "ar": "اشترك"
+        },
+        "nlKvkk": {
+          "tr": "Abone olarak e-posta adresinizin bülten amacıyla işlenmesini kabul edersiniz. İstediğiniz an ayrılabilirsiniz.",
+          "en": "By subscribing you agree to the processing of your e-mail address for the newsletter. You can unsubscribe at any time.",
+          "ar": "بالاشتراك توافق على معالجة بريدك الإلكتروني لأغراض النشرة. يمكنك إلغاء الاشتراك في أي وقت."
+        },
+        "nlSubject": {
+          "tr": "Bülten aboneliği",
+          "en": "Newsletter subscription",
+          "ar": "الاشتراك في النشرة"
+        },
+        "nlBody": {
+          "tr": "Merhaba, bültene abone olmak istiyorum.",
+          "en": "Hello, I would like to subscribe to the newsletter.",
+          "ar": "مرحبًا، أرغب في الاشتراك في النشرة البريدية."
+        },
+        "nlErr": {
+          "tr": "Geçerli bir e-posta adresi girin.",
+          "en": "Enter a valid e-mail address.",
+          "ar": "أدخل بريدًا إلكترونيًا صالحًا."
+        },
+        "nlOk": {
+          "tr": "E-posta uygulamanız açılıyor; aboneliği oradan onaylayın.",
+          "en": "Your e-mail app is opening; confirm the subscription there.",
+          "ar": "يتم فتح تطبيق البريد؛ أكّد الاشتراك من هناك."
+        },
+        "title_pages": {
+          "tr": "Sayfalar",
+          "en": "Pages",
+          "ar": "الصفحات"
+        },
+        "title_services": {
+          "tr": "Hizmetler",
+          "en": "Services",
+          "ar": "الخدمات"
+        },
+        "title_contact": {
+          "tr": "İletişim",
+          "en": "Contact",
+          "ar": "اتصل بنا"
+        },
+        "title_hours": {
+          "tr": "Çalışma Saatleri",
+          "en": "Opening Hours",
+          "ar": "ساعات العمل"
+        },
+        "title_social": {
+          "tr": "Bizi takip edin",
+          "en": "Follow us",
+          "ar": "تابعنا"
+        },
+        "services": [
+          {
+            "name": {
+              "tr": "Fren sistemi",
+              "en": "Brake system",
+              "ar": "نظام الفرامل"
+            },
+            "href": "urunler"
+          },
+          {
+            "name": {
+              "tr": "Filtreler",
+              "en": "Filters",
+              "ar": "الفلاتر"
+            },
+            "href": "urunler"
+          },
+          {
+            "name": {
+              "tr": "Motor parçaları",
+              "en": "Engine parts",
+              "ar": "قطع المحرك"
+            },
+            "href": "urunler"
+          },
+          {
+            "name": {
+              "tr": "Süspansiyon ve aks",
+              "en": "Suspension and axle",
+              "ar": "التعليق والمحور"
+            },
+            "href": "urunler"
+          }
+        ],
+        "hours": [
+          {
+            "days": {
+              "tr": "Çalışma saatleri",
+              "en": "Working hours",
+              "ar": "ساعات العمل"
+            },
+            "time": {
+              "tr": "Hafta içi 08:00 – 18:30 · Cumartesi 08:30 – 15:00",
+              "en": "Weekdays 08:00 – 18:30 · Saturday 08:30 – 15:00",
+              "ar": "أيام الأسبوع 08:00 – 18:30 · السبت 08:30 – 15:00"
+            }
+          }
+        ],
+        "address": {
+          "tr": "Sanayi Sitesi 4. Blok No: 12, Şehitkamil, Gaziantep (kurgusal adres)",
+          "en": "12 Block 4, Industrial Estate, Sehitkamil, Gaziantep (fictional address)",
+          "ar": "المجمع الصناعي، المبنى 4 رقم 12، شهيد كامل، غازي عنتاب (عنوان افتراضي)"
+        },
+        "phone": "+90 342 000 00 00",
+        "email": "stok@yesilvites.example",
+        "social": [],
+        "legal": [
+          {
+            "text": {
+              "tr": "Gizlilik",
+              "en": "Privacy",
+              "ar": "الخصوصية"
+            },
+            "href": "gizlilikpolitikasi"
+          },
+          {
+            "text": {
+              "tr": "Kişisel veriler",
+              "en": "Personal data",
+              "ar": "البيانات الشخصية"
+            },
+            "href": "kisiselveriler"
+          }
+        ],
+        "rightsText": {
+          "tr": "Tüm hakları saklıdır.",
+          "en": "All rights reserved.",
+          "ar": "جميع الحقوق محفوظة."
+        },
+        "topLabel": {
+          "tr": "Yukarı çık",
+          "en": "Back to top",
+          "ar": "العودة إلى الأعلى"
+        }
+      },
+      "data": [],
+      "id": "951kgt",
+      "path": "footer-10",
+      "local": "footer",
+      "index": 27
+    }
+  ]
+}

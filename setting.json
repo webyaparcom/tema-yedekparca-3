@@ -1,0 +1,58 @@
+{
+  "order": false,
+  "user": false,
+  "description": {
+    "tr": "Yeşil Vites Yedek Parça: fren, filtre, motor ve süspansiyon parçaları; OEM ve eşdeğer etiketi, stok sorma, 14 gün iade. (Demo site)",
+    "en": "Yesil Vites Auto Parts: brake, filter, engine and suspension parts; OEM and equivalent labels, stock enquiries, 14-day returns. (Demo site)",
+    "ar": "يشيل فيتس لقطع الغيار: قطع الفرامل والفلاتر والمحرك والتعليق مع وسم OEM ومكافئ والاستعلام عن المخزون والإرجاع خلال 14 يومًا. (موقع تجريبي)"
+  },
+  "keyword": {
+    "tr": "oto yedek parça, fren, filtre, OEM",
+    "en": "auto parts, brakes, filters, OEM",
+    "ar": "قطع غيار سيارات، فرامل، فلاتر، OEM"
+  },
+  "category": "Kurumsal",
+  "name": "Yeşil Vites Yedek Parça",
+  "domain": "yedekparca-3.webyapar.com",
+  "langs": {
+    "tr": true,
+    "en": true,
+    "ar": true,
+    "de": false,
+    "ru": false,
+    "es": false,
+    "fr": false,
+    "it": false,
+    "ja": false,
+    "zh": false,
+    "ko": false,
+    "pt": false
+  },
+  "logo": "logo.png",
+  "multi": false,
+  "icon": "icon.png",
+  "theme_color": "#3F6212",
+  "publishMode": "static",
+  "font": {
+    "body": "open-sans",
+    "heading": "poppins",
+    "ar": {
+      "body": "ibm-plex-sans-arabic",
+      "heading": "noto-kufi-arabic"
+    }
+  },
+  "phone": "+90 342 000 00 00",
+  "email": "stok@yesilvites.example",
+  "colorScheme": "auto",
+  "seo": {
+    "noindex": true
+  },
+  "cssTokens": {
+    "--mx-radius-sm": "13px",
+    "--mx-radius-md": "22px",
+    "--mx-radius-lg": "31px",
+    "--mx-radius-xl": "42px",
+    "--mx-shadow-md": "0 24px 60px rgba(77,124,15,.16)",
+    "--mx-dur": "280ms"
+  }
+}
