@@ -1623,6 +1623,12 @@
           "tr": "(yeni sekmede açılır)",
           "en": "(opens in a new tab)",
           "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "girisHref": "",
+        "girisText": {
+          "tr": "Üye Girişi",
+          "en": "Login",
+          "ar": "تسجيل الدخول"
         }
       },
       "id": "nmvfcf",
@@ -2016,9 +2022,9 @@
           "onek": "",
           "sonek": "",
           "etiket": {
-            "tr": "Etiket: OEM / eşdeğer",
-            "en": "Labels: OEM / equivalent",
-            "ar": "الوسوم: OEM / مكافئ"
+            "tr": "Etiket türü: OEM ve eşdeğer",
+            "en": "Label types: OEM and equivalent",
+            "ar": "نوعا الوسم: OEM ومكافئ"
           },
           "aciklama": {
             "tr": "",
@@ -2048,9 +2054,9 @@
           "onek": "",
           "sonek": "",
           "etiket": {
-            "tr": "Gün hizmet (haftalık)",
-            "en": "Days a week",
-            "ar": "أيام أسبوعيًا"
+            "tr": "Gün açık (haftada)",
+            "en": "Days open a week",
+            "ar": "أيام العمل أسبوعيًا"
           },
           "aciklama": {
             "tr": "",

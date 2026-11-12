@@ -773,7 +773,7 @@
     justify-content: center;
     overflow: hidden;
     cursor: pointer;
-    background-image: url("/img/t4mp01/map.png?v=hradx") !important;
+    background-image: url("/img/t4mp01/map.png?v=afahr") !important;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -994,3 +994,4 @@
   @media (prefers-reduced-motion: reduce) { .f0001-dk-cta { transition: none; } .f0001-dk-cta:hover { gap: 4px; } }
 
 [class*="-m10 "]{top:var(--mx-demo-bandi-h,48px)!important}
+#header>header[class*="-m10"]:not([class*="-akista"]){top:var(--mx-demo-bandi-h,0px)}
