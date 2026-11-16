@@ -1,381 +1,190 @@
-<section class="modulex-kb modulex-kb--{{kbstil}}{{kbsinif}}" data-mx-hero="1" aria-roledescription="carousel" aria-label="{{aria_label}}" style="--kb-yk: {{kbyk}};" data-kb-sure="{{kbsure}}" data-kb-pause="{{pause_label}}" data-kb-play="{{play_label}}">
-  <div class="modulex-kb-slaytlar">{{kbslaytlar}}</div>
-  <div class="modulex-kb-kontrol">
-    <button class="modulex-kb-ok modulex-kb-ok--geri" type="button" aria-label="{{prev_label}}">
-      <span class="material-symbols-outlined" aria-hidden="true">arrow_back</span>
-    </button>
-    <div class="modulex-kb-noktalar">{{kbnoktalar}}</div>
-    <button class="modulex-kb-ok modulex-kb-ok--ileri" type="button" aria-label="{{next_label}}">
-      <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span>
-    </button>
-    <button class="modulex-kb-oynat" type="button" aria-pressed="true" aria-label="{{pause_label}}">
-      <span class="material-symbols-outlined" aria-hidden="true">pause</span>
-    </button>
+<section class="modulex-kayan-kucuk-resim{{fbsinif}}" {{fbetiket}}>
+  <div class="modulex-kayan-kucuk-resim-ic">
+    {{fbbas}}
+    {{fbgovde}}
   </div>
-  <p class="modulex-kb-durum" aria-live="polite" aria-atomic="true"></p>
 </section>
 
 <style>
-  /* Slider Ken Burns (31 Eki 2026, G8-A) — sıfır bağımlılık. Görsel üstü metin: overlay/overlayText çifti (paletten bağımsız
-     koyu scrim + açık yazı, iki modda da sabit kontrast). bolunmus varyantı metni düz zemine alır: bg/text çifti. */
-  .modulex-kb {
-    box-sizing: border-box;
-    position: relative;
-    width: 100%;
-    min-height: max(420px, calc(var(--kb-yk, 72) * 1vh));
-    overflow: hidden;
-    isolation: isolate;
-    background: --overlay--;
-    color: --overlayText--;
-    outline: none;
-  }
-  @supports (height: 1svh) {
-    .modulex-kb { min-height: max(420px, calc(var(--kb-yk, 72) * 1svh)); }
-  }
-  .modulex-kb *,
-  .modulex-kb *::before,
-  .modulex-kb *::after { box-sizing: border-box; }
-  .modulex-kb:focus-visible { outline: 3px solid --accent--; outline-offset: -3px; }
+  /* kayan-kucuk-resim — Seçim noktayla değil görselin kendisiyle (küçük resim); metin görselin altında ayrı bilgi şeridinde — ürün/proje vitrini gibi okunur. */
+  .modulex-kayan-kucuk-resim { box-sizing: border-box; width: 100%; padding: --bosluk-- 20px; background: --bg--; color: --text--; font-size: 1rem; line-height: 1.6; font-family: var(--mx-font-sans, inherit); overflow-wrap: break-word; }
+  .modulex-kayan-kucuk-resim *, .modulex-kayan-kucuk-resim *::before, .modulex-kayan-kucuk-resim *::after { box-sizing: border-box; }
+  /* ham/css.css «* { font-size: 14px }» kalıtımı keser — modül içinde boyut üstten gelsin (ikon yazı tipi hariç) */
+  .modulex-kayan-kucuk-resim :where(*:not(.material-symbols-outlined)) { font-size: inherit; }
+  /* aynı «*» kuralı font-weight 400 · line-height 1.2 · font-family de basar — modül içinde kalıtım */
+  .modulex-kayan-kucuk-resim :where(*:not(.material-symbols-outlined)) { font-weight: inherit; line-height: inherit; font-family: inherit; }
+  .modulex-kayan-kucuk-resim :where(h2, h3, h4, p, ul, ol, li, figure, blockquote, dl, dd) { margin: 0; }
+  .modulex-kayan-kucuk-resim :where(ul, ol) { padding: 0; list-style: none; }
+  .modulex-kayan-kucuk-resim img { display: block; max-width: 100%; }
+  /* <img width height> öznitelik yüksekliği CSS aspect-ratio'yu ezer — sıfır özgüllükle auto (modül sınıfının height'ı yine kazanır) */
+  :where(.modulex-kayan-kucuk-resim) img { height: auto; }
+  .modulex-kayan-kucuk-resim [hidden] { display: none !important; }
+  .modulex-kayan-kucuk-resim :where(a, button, summary, [data-cevir]) { cursor: pointer; }
+  .modulex-kayan-kucuk-resim :where(a, button, summary, [tabindex]):focus-visible { outline: 3px solid --accent--; outline-offset: 3px; }
+  .modulex-kayan-kucuk-resim-ic { max-width: --max--; margin-inline: auto; }
+  .modulex-kayan-kucuk-resim-bas { display: grid; gap: 12px; margin-block-end: clamp(32px, 4vw, 52px); }
+  .modulex-kayan-kucuk-resim--bassiz .modulex-kayan-kucuk-resim-bas { display: none; }
+  .modulex-kayan-kucuk-resim-ust { color: --accentInk--; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; }
+  .modulex-kayan-kucuk-resim-baslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.8rem, 3.4vw, 2.8rem); font-weight: 750; letter-spacing: -0.025em; line-height: 1.1; }
+  .modulex-kayan-kucuk-resim-metin { color: --muted--; font-size: 1.05rem; line-height: 1.7; }
+  .modulex-kayan-kucuk-resim-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-block-start: 8px; }
+  .modulex-kayan-kucuk-resim-dugme { display: inline-flex; align-items: center; gap: 8px; min-height: 48px; padding: 12px 22px; border: 2px solid --accent--; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease; }
+  .modulex-kayan-kucuk-resim-dugme:hover { transform: translateY(-2px); }
+  .modulex-kayan-kucuk-resim-dugme--ikincil { background: transparent; color: --text--; border-color: --cizgi--; }
+  .modulex-kayan-kucuk-resim-dugme--ikincil:hover { border-color: --accent--; }
+  .modulex-kayan-kucuk-resim-dugme .material-symbols-outlined { font-size: 20px; }
 
-  .modulex-kb-slaytlar { position: absolute; inset: 0; }
-  .modulex-kb-slayt {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: flex-end;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
-  }
-  .modulex-kb-slayt.modulex-kb-aktif { opacity: 1; visibility: visible; transition: opacity 0.3s ease; z-index: 1; }
+  .modulex-kayan-kucuk-resim { position: relative; }
+  /* tam genişlik: taban «.modulex-kayan-kucuk-resim { padding }» ve 768px «padding-inline: 16px» kuralları sonra gelir → çift sınıfla sıfırla */
+  .modulex-kayan-kucuk-resim.modulex-kayan-kucuk-resim { padding: 0; }
+  .modulex-kayan-kucuk-resim-karusel { position: relative; outline: none; }
+  .modulex-kayan-kucuk-resim-karusel:focus-visible { outline: 3px solid --accent--; outline-offset: -3px; }
+  .modulex-kayan-kucuk-resim-durum { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .modulex-kayan-kucuk-resim-sust { color: inherit; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; opacity: 0.92; }
+  .modulex-kayan-kucuk-resim-sbaslik { font-family: var(--mx-font-heading, inherit); font-size: clamp(1.9rem, 4.4vw, 3.6rem); font-weight: 780; letter-spacing: -0.03em; line-height: 1.05; }
+  .modulex-kayan-kucuk-resim-smetin { font-size: clamp(1rem, 1.4vw, 1.15rem); line-height: 1.65; }
+  .modulex-kayan-kucuk-resim-scta { display: inline-flex; align-items: center; gap: 8px; justify-self: start; min-height: 48px; padding: 12px 22px; border-radius: 999px; background: --accent--; color: --accentText--; font-weight: 700; text-decoration: none; transition: transform 0.25s ease, box-shadow 0.25s ease; }
+  .modulex-kayan-kucuk-resim-scta:hover { transform: translateY(-2px); box-shadow: 0 14px 26px -16px --accent--; }
+  .modulex-kayan-kucuk-resim-scta .material-symbols-outlined { font-size: 20px; }
+  .modulex-kayan-kucuk-resim-gorsel { width: 100%; height: 100%; object-fit: cover; }
+  .modulex-kayan-kucuk-resim-yer { background: linear-gradient(135deg, color-mix(in srgb, --accent-- 55%, --text--), color-mix(in srgb, --accent-- 20%, --text--)); }
+  .modulex-kayan-kucuk-resim-ok, .modulex-kayan-kucuk-resim-oynat { display: inline-grid; place-items: center; width: 48px; height: 48px; padding: 0; border: 1px solid --cizgi--; border-radius: 50%; background: --bg--; color: --text--; transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease; }
+  .modulex-kayan-kucuk-resim-ok:hover, .modulex-kayan-kucuk-resim-oynat:hover { background: --accent--; color: --accentText--; border-color: --accent--; }
+  .modulex-kayan-kucuk-resim-ok:active { transform: scale(0.94); }
+  .modulex-kayan-kucuk-resim-nokta { padding: 0; border: 0; background: transparent; color: inherit; font: inherit; }
+  .modulex-kayan-kucuk-resim-karusel--tek :is(.modulex-kayan-kucuk-resim-ok, .modulex-kayan-kucuk-resim-oynat, .modulex-kayan-kucuk-resim-nokta, .modulex-kayan-kucuk-resim-denetim, .modulex-kayan-kucuk-resim-sekmeler, .modulex-kayan-kucuk-resim-kucukler) { display: none; }
 
-  .modulex-kb-medya { position: absolute; inset: 0; overflow: hidden; }
-  .modulex-kb-medya img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform-origin: center;
-  }
-  .modulex-kb-ph {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, color-mix(in srgb, --accent-- 55%, --overlay--), --overlay-- 75%);
-  }
-  .modulex-kb-slayt:nth-child(even) .modulex-kb-ph { background: linear-gradient(225deg, color-mix(in srgb, --accent-- 40%, --overlay--), --overlay-- 80%); }
-  /* Ken Burns: yalnız aktif slaytta, 10 sn, yön slayt sırasına göre */
-  .modulex-kb-aktif .modulex-kb-medya img,
-  .modulex-kb-aktif .modulex-kb-ph { animation: modulexKbYakin 10s ease-out forwards; }
-  .modulex-kb-slayt:nth-child(even).modulex-kb-aktif .modulex-kb-medya img,
-  .modulex-kb-slayt:nth-child(even).modulex-kb-aktif .modulex-kb-ph { animation-name: modulexKbKay; }
-  @keyframes modulexKbYakin {
-    from { transform: scale(1) translate(0, 0); }
-    to { transform: scale(1.12) translate(-1.5%, -1%); }
-  }
-  @keyframes modulexKbKay {
-    from { transform: scale(1.12) translate(1.5%, 0); }
-    to { transform: scale(1.02) translate(-1%, 1%); }
-  }
-
-  .modulex-kb-scrim {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(180deg, color-mix(in srgb, --overlay-- 20%, transparent) 0%, color-mix(in srgb, --overlay-- 45%, transparent) 50%, color-mix(in srgb, --overlay-- 88%, transparent) 100%);
-  }
-
-  .modulex-kb-icerik {
-    position: relative;
-    width: 100%;
-    max-width: --max--;
-    margin-inline: auto;
-    padding: 64px clamp(16px, 4vw, 32px) 112px;
-  }
-  .modulex-kb-ic { max-width: 60ch; }
-  .modulex-kb-eyebrow {
-    display: inline-block;
-    margin: 0 0 12px;
-    padding: 5px 12px;
-    border-radius: 999px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    background: --accent--;
-    color: --accentText--;
-  }
-  .modulex-kb-baslik {
-    margin: 0 0 14px;
-    font-size: clamp(1.8rem, 1.1rem + 2.8vw, 3.4rem);
-    line-height: 1.08;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    color: --overlayText--;
-    text-wrap: balance;
-    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
-  }
-  .modulex-kb-metin { margin: 0 0 24px; font-size: clamp(1rem, 0.95rem + 0.3vw, 1.15rem); line-height: 1.65; color: color-mix(in srgb, --overlayText-- 90%, transparent); }
-  /* css.css bağlantı rengi :where() ile sıfır özgüllük (31 Eki) → :link/:visited tekrarı gerekmez */
-  .modulex-kb a.modulex-kb-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    min-height: 48px;
-    padding: 12px 26px;
-    border-radius: calc(--radius-- / 1.3);
-    background: --accent--;
-    color: --accentText--;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
-  }
-  .modulex-kb a.modulex-kb-cta:hover,
-  .modulex-kb a.modulex-kb-cta:focus-visible { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28); outline-color: --overlayText--; }
-  .modulex-kb-cta .material-symbols-outlined { font-size: 20px; }
-  [dir="rtl"] .modulex-kb-cta .material-symbols-outlined { transform: scaleX(-1); }
-
-  /* metin giriş animasyonu (aktif slaytta, sırayla) */
-  .modulex-kb-aktif .modulex-kb-ic > * { animation: modulexKbGir 0.3s ease both; }
-  .modulex-kb-aktif .modulex-kb-ic > :nth-child(2) { animation-delay: 0.08s; }
-  .modulex-kb-aktif .modulex-kb-ic > :nth-child(3) { animation-delay: 0.16s; }
-  .modulex-kb-aktif .modulex-kb-ic > :nth-child(4) { animation-delay: 0.24s; }
-  @keyframes modulexKbGir {
-    from { opacity: 0; transform: translateY(14px); }
-    to { opacity: 1; transform: none; }
-  }
-
-  /* kontroller */
-  .modulex-kb-kontrol {
-    position: absolute;
-    z-index: 3;
-    bottom: 24px;
-    inset-inline: 0;
-    max-width: --max--;
-    margin-inline: auto;
-    padding-inline: clamp(16px, 4vw, 32px);
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  .modulex-kb-ok,
-  .modulex-kb-oynat {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    border: 1px solid color-mix(in srgb, --overlayText-- 45%, transparent);
-    background: color-mix(in srgb, --overlay-- 55%, transparent);
-    color: --overlayText--;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-  }
-  .modulex-kb-ok:hover,
-  .modulex-kb-oynat:hover { background: color-mix(in srgb, --overlay-- 85%, transparent); }
-  .modulex-kb-ok:focus-visible,
-  .modulex-kb-oynat:focus-visible,
-  .modulex-kb-nokta:focus-visible { outline: 3px solid --overlayText--; outline-offset: 2px; }
-  .modulex-kb-ok .material-symbols-outlined,
-  .modulex-kb-oynat .material-symbols-outlined { font-size: 24px; }
-  [dir="rtl"] .modulex-kb-ok .material-symbols-outlined { transform: scaleX(-1); }
-  .modulex-kb-oynat { margin-inline-start: auto; }
-  .modulex-kb-noktalar { display: flex; align-items: center; gap: 4px; }
-  .modulex-kb-nokta {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    cursor: pointer;
-  }
-  .modulex-kb-nokta::before {
-    content: "";
-    width: 10px;
-    height: 10px;
-    border-radius: 999px;
-    background: color-mix(in srgb, --overlayText-- 55%, transparent);
-    transition: width 0.3s ease, background-color 0.3s ease;
-  }
-  .modulex-kb-nokta[aria-current="true"]::before { width: 30px; background: --overlayText--; }
-  .modulex-kb-durum {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    white-space: nowrap;
-  }
-  .modulex-kb-tek .modulex-kb-kontrol { display: none; }
-
-  /* === Varyant: tam — görsel tam zemin, metin alt-başlangıçta, kontroller yayık === */
-  .modulex-kb--tam .modulex-kb-slayt { align-items: flex-end; }
-  .modulex-kb--tam .modulex-kb-baslik { max-width: 18ch; }
-
-  /* === Varyant: kart — içerik yarı saydam kartta, ortalı === */
-  .modulex-kb--kart .modulex-kb-slayt { align-items: center; }
-  .modulex-kb--kart .modulex-kb-scrim { background: color-mix(in srgb, --overlay-- 25%, transparent); }
-  .modulex-kb--kart .modulex-kb-icerik { display: flex; justify-content: center; padding-bottom: 120px; }
-  .modulex-kb--kart .modulex-kb-ic {
-    max-width: 640px;
-    padding: clamp(24px, 4vw, 44px);
-    border-radius: --radius--;
-    border: 1px solid color-mix(in srgb, --overlayText-- 25%, transparent);
-    background: color-mix(in srgb, --overlay-- 80%, transparent);
-    backdrop-filter: blur(10px);
-    text-align: center;
-  }
-  .modulex-kb--kart .modulex-kb-baslik { text-shadow: none; }
-  .modulex-kb--kart .modulex-kb-kontrol { justify-content: center; }
-  .modulex-kb--kart .modulex-kb-oynat { margin-inline-start: 0; }
-
-  /* === Varyant: bolunmus — metin düz zeminde (bg/text), görsel bitiş tarafında === */
-  .modulex-kb--bolunmus { background: --bg--; color: --text--; }
-  .modulex-kb--bolunmus .modulex-kb-slayt { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: stretch; }
-  .modulex-kb--bolunmus .modulex-kb-medya { position: relative; grid-column: 2; grid-row: 1; }
-  .modulex-kb--bolunmus .modulex-kb-scrim { display: none; }
-  .modulex-kb--bolunmus .modulex-kb-icerik { grid-column: 1; grid-row: 1; display: flex; align-items: center; padding: 56px clamp(24px, 5vw, 64px) 120px; max-width: none; margin: 0; }
-  .modulex-kb--bolunmus .modulex-kb-baslik { color: --text--; text-shadow: none; }
-  .modulex-kb--bolunmus .modulex-kb-metin { color: --muted--; }
-  .modulex-kb--bolunmus .modulex-kb-kontrol { max-width: none; width: 50%; margin: 0; inset-inline-end: auto; padding-inline: clamp(24px, 5vw, 64px); }
-  .modulex-kb--bolunmus .modulex-kb-ok,
-  .modulex-kb--bolunmus .modulex-kb-oynat { background: --surface--; color: --text--; border-color: color-mix(in srgb, --text-- 55%, transparent); } /* kenar ≥ 3:1 (zemin surface ≈ bg) */
-  .modulex-kb--bolunmus .modulex-kb-ok:hover,
-  .modulex-kb--bolunmus .modulex-kb-oynat:hover { background: color-mix(in srgb, --text-- 10%, --surface--); }
-  .modulex-kb--bolunmus .modulex-kb-nokta::before { background: color-mix(in srgb, --text-- 30%, transparent); }
-  .modulex-kb--bolunmus .modulex-kb-nokta[aria-current="true"]::before { background: --accent--; }
-  .modulex-kb--bolunmus .modulex-kb-ok:focus-visible,
-  .modulex-kb--bolunmus .modulex-kb-oynat:focus-visible,
-  .modulex-kb--bolunmus .modulex-kb-nokta:focus-visible { outline-color: --accent--; }
-  .modulex-kb--bolunmus a.modulex-kb-cta:focus-visible { outline-color: --accent--; }
-
-  @media (max-width: 1024px) {
-    .modulex-kb--bolunmus .modulex-kb-slayt { grid-template-columns: minmax(0, 1fr); grid-template-rows: minmax(220px, 42%) minmax(0, 1fr); }
-    .modulex-kb--bolunmus .modulex-kb-medya { grid-column: 1; grid-row: 1; }
-    .modulex-kb--bolunmus .modulex-kb-icerik { grid-column: 1; grid-row: 2; padding: 28px clamp(16px, 4vw, 32px) 100px; }
-    .modulex-kb--bolunmus .modulex-kb-kontrol { width: 100%; padding-inline: clamp(16px, 4vw, 32px); }
-  }
+  .modulex-kayan-kucuk-resim-kap { max-width: --max--; margin-inline: auto; padding: clamp(24px, 4vw, 48px) 20px; }
+  .modulex-kayan-kucuk-resim-sahne { position: relative; display: grid; }
+  .modulex-kayan-kucuk-resim-slayt { grid-area: 1 / 1; display: grid; gap: 0; opacity: 0; visibility: hidden; transition: opacity 0.5s ease, visibility 0s linear 0.5s; }
+  .modulex-kayan-kucuk-resim-slayt--aktif { opacity: 1; visibility: visible; transition: opacity 0.5s ease, visibility 0s; }
+  .modulex-kayan-kucuk-resim-cerceve { overflow: hidden; height: clamp(260px, calc(var(--kayan-yk) - 200px), 640px); border-radius: --yuvarlak-- --yuvarlak-- 0 0; background: --kartBg--; }
+  .modulex-kayan-kucuk-resim-cerceve .modulex-kayan-kucuk-resim-gorsel { transition: transform 0.8s ease; }
+  .modulex-kayan-kucuk-resim-slayt--aktif .modulex-kayan-kucuk-resim-cerceve .modulex-kayan-kucuk-resim-gorsel { animation: modulex-kayan-kucuk-resim-yak 1s ease both; }
+  @keyframes modulex-kayan-kucuk-resim-yak { from { transform: scale(1.05); } to { transform: none; } }
+  .modulex-kayan-kucuk-resim-bilgi { padding: clamp(20px, 3vw, 32px); border: 1px solid --cizgi--; border-block-start: 0; border-radius: 0 0 --yuvarlak-- --yuvarlak--; background: --bg--; color: --text--; }
+  .modulex-kayan-kucuk-resim-byazi { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 8px 32px; }
+  .modulex-kayan-kucuk-resim-byazi > :not(.modulex-kayan-kucuk-resim-scta) { grid-column: 1; }
+  .modulex-kayan-kucuk-resim-byazi .modulex-kayan-kucuk-resim-scta { grid-column: 2; grid-row: 1 / span 3; }
+  .modulex-kayan-kucuk-resim-sust { color: --accentInk--; opacity: 1; }
+  .modulex-kayan-kucuk-resim-sbaslik { font-size: clamp(1.6rem, 3vw, 2.4rem); }
+  .modulex-kayan-kucuk-resim-smetin { color: --muted--; }
+  .modulex-kayan-kucuk-resim-ok { position: absolute; inset-block-start: calc(clamp(260px, calc(var(--kayan-yk) - 200px), 640px) / 2 - 24px); z-index: 2; box-shadow: 0 10px 24px -14px color-mix(in srgb, --text-- 60%, transparent); }
+  .modulex-kayan-kucuk-resim-ok--geri { inset-inline-start: 16px; }
+  .modulex-kayan-kucuk-resim-ok--ileri { inset-inline-end: 16px; }
+  .modulex-kayan-kucuk-resim-kucukler { display: flex; align-items: center; gap: 10px; margin-block-start: 16px; overflow-x: auto; padding: 4px; scrollbar-width: thin; }
+  .modulex-kayan-kucuk-resim-nokta { flex: none; overflow: hidden; width: 112px; height: 72px; border: 2px solid transparent; border-radius: 12px; background: --kartBg--; opacity: 0.62; transition: opacity 0.25s ease, border-color 0.25s ease, transform 0.25s ease; }
+  .modulex-kayan-kucuk-resim-nokta img { width: 100%; height: 100%; object-fit: cover; }
+  .modulex-kayan-kucuk-resim-nokta:hover { opacity: 1; transform: translateY(-2px); }
+  .modulex-kayan-kucuk-resim-nokta--aktif { border-color: --accent--; opacity: 1; }
+  .modulex-kayan-kucuk-resim-kno { display: grid; place-items: center; height: 100%; color: --text--; font-weight: 800; }
+  .modulex-kayan-kucuk-resim-oynat { flex: none; margin-inline-start: auto; }
   @media (max-width: 768px) {
-    .modulex-kb { min-height: max(420px, calc(var(--kb-yk, 72) * 0.9vh)); }
-    .modulex-kb-icerik { padding: 48px 16px 104px; }
-    .modulex-kb--kart .modulex-kb-ic { padding: 20px 16px; }
-    .modulex-kb-kontrol { bottom: 16px; gap: 6px; }
-    .modulex-kb-noktalar { flex: 1; justify-content: center; }
-    .modulex-kb-nokta { width: 36px; height: 44px; }
-    .modulex-kb--bolunmus .modulex-kb-icerik { padding-bottom: 92px; }
+    .modulex-kayan-kucuk-resim-kap { padding-inline: 16px; }
+    .modulex-kayan-kucuk-resim-byazi { grid-template-columns: minmax(0, 1fr); }
+    .modulex-kayan-kucuk-resim-byazi .modulex-kayan-kucuk-resim-scta { grid-column: 1; grid-row: auto; }
+    .modulex-kayan-kucuk-resim-nokta { width: 76px; height: 52px; }
+    .modulex-kayan-kucuk-resim-ok { width: 42px; height: 42px; }
   }
 
-  /* W2: mobil tasma kontrolu */
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-kayan-kucuk-resim :is(.modulex-kayan-kucuk-resim-baslik, .modulex-kayan-kucuk-resim-ust, h3, h4, strong) { letter-spacing: 0; }
+  :is([lang="ar"], [lang="fa"], [lang="he"], [lang="ur"]) .modulex-kayan-kucuk-resim-baslik { line-height: 1.35; }
   @media (max-width: 768px) {
-    [class*="modulex"] {
-      max-width: 100%;
-      box-sizing: border-box;
-    }
+    .modulex-kayan-kucuk-resim { padding-inline: 16px; }
   }
-
-  /* W2: erisilebilirlik — animasyon kapatma (Ken Burns ve giriş animasyonu dahil); slayt anında değişir */
   @media (prefers-reduced-motion: reduce) {
-    [class*="modulex"],
-    [class*="modulex"] * {
-      animation: none !important;
-      transition: none !important;
-    }
-    .modulex-kb-aktif .modulex-kb-medya img,
-    .modulex-kb-aktif .modulex-kb-ph { transform: none !important; }
+    .modulex-kayan-kucuk-resim *, .modulex-kayan-kucuk-resim *::before, .modulex-kayan-kucuk-resim *::after { animation: none !important; transition: none !important; }
   }
 </style>
 <script>
-  (function () {
-    var kok = document.querySelector(".modulex-kb");
-    if (!kok) { return; }
-    var slaytlar = kok.querySelectorAll(".modulex-kb-slayt");
-    var noktalar = kok.querySelectorAll(".modulex-kb-nokta");
-    var geri = kok.querySelector(".modulex-kb-ok--geri");
-    var ileri = kok.querySelector(".modulex-kb-ok--ileri");
-    var oynat = kok.querySelector(".modulex-kb-oynat");
-    var durum = kok.querySelector(".modulex-kb-durum");
-    var n = slaytlar.length;
-    if (n < 2) { return; }
-    var azalt = false;
-    try { azalt = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches; } catch (e) { azalt = false; }
-    var rtl = (document.documentElement.getAttribute("dir") || "").toLowerCase() === "rtl";
-    var sure = parseInt(kok.getAttribute("data-kb-sure"), 10);
-    if (!isFinite(sure) || sure < 3000) { sure = 6000; }
-    if (sure > 20000) { sure = 20000; }
-    var otomatik = kok.getAttribute("data-kb-otomatik") !== "0" && !azalt;
-    var aktif = 0, sayac = null, duraklat = false;
-
-    function goster(i) {
-      i = (i + n) % n;
-      for (var k = 0; k < n; k++) {
-        var acikMi = k === i;
-        slaytlar[k].classList.toggle("modulex-kb-aktif", acikMi);
-        slaytlar[k].setAttribute("aria-hidden", acikMi ? "false" : "true");
-        if (noktalar[k]) {
-          if (acikMi) { noktalar[k].setAttribute("aria-current", "true"); } else { noktalar[k].removeAttribute("aria-current"); }
-        }
-      }
-      aktif = i;
-      if (durum) { durum.textContent = slaytlar[i].getAttribute("aria-label") || ""; }
-    }
-    function baslat() {
-      durdur();
-      if (!otomatik || duraklat) { return; }
-      sayac = setInterval(function () { goster(aktif + 1); }, sure);
-    }
-    function durdur() { if (sayac) { clearInterval(sayac); sayac = null; } }
-    function oynatGuncelle() {
-      if (!oynat) { return; }
-      var ikon = oynat.querySelector(".material-symbols-outlined");
-      oynat.setAttribute("aria-pressed", otomatik ? "true" : "false");
-      oynat.setAttribute("aria-label", otomatik ? (kok.getAttribute("data-kb-pause") || "") : (kok.getAttribute("data-kb-play") || ""));
-      if (ikon) { ikon.textContent = otomatik ? "pause" : "play_arrow"; }
-    }
-
-    if (geri) { geri.addEventListener("click", function () { goster(aktif - 1); baslat(); }); }
-    if (ileri) { ileri.addEventListener("click", function () { goster(aktif + 1); baslat(); }); }
-    for (var d = 0; d < noktalar.length; d++) {
-      (function (idx) { noktalar[idx].addEventListener("click", function () { goster(idx); baslat(); }); })(d);
-    }
-    if (oynat) {
-      oynat.addEventListener("click", function () {
-        otomatik = !otomatik;
-        oynatGuncelle();
-        if (otomatik) { baslat(); } else { durdur(); }
-      });
-    }
-    /* klavye: ←/→ (RTL'de ters), Home/End */
-    kok.setAttribute("tabindex", "0");
-    kok.addEventListener("keydown", function (e) {
-      if (e.key === "ArrowRight") { e.preventDefault(); goster(rtl ? aktif - 1 : aktif + 1); baslat(); }
-      else if (e.key === "ArrowLeft") { e.preventDefault(); goster(rtl ? aktif + 1 : aktif - 1); baslat(); }
-      else if (e.key === "Home") { e.preventDefault(); goster(0); baslat(); }
-      else if (e.key === "End") { e.preventDefault(); goster(n - 1); baslat(); }
+  (() => {
+    const P = "modulex-kayan-kucuk-resim";
+    const az = !!(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    const kayan = (s, P, az) => {
+          const k = s.querySelector("." + P + "-karusel");
+          if (!k) return;
+          const sl = [...k.querySelectorAll("." + P + "-slayt")];
+          const nk = [...k.querySelectorAll("." + P + "-nokta")];
+          const oy = k.querySelector("." + P + "-oynat");
+          const du = k.querySelector("." + P + "-durum");
+          const n = sl.length;
+          if (n < 2) return;
+          s.classList.add(P + "--js");
+          let sure = Number(k.dataset.sure);
+          if (!Number.isFinite(sure)) sure = 6000;
+          sure = Math.min(20000, Math.max(3000, sure));
+          let oto = k.dataset.oto !== "0" && !az;
+          let aktif = 0;
+          let zam = null;
+          let bekle = false;
+          const rtl = () => getComputedStyle(k).direction === "rtl";
+          const goster = (i, duyur) => {
+            i = ((i % n) + n) % n;
+            sl.forEach((x, j) => {
+              const a = j === i;
+              x.classList.toggle(P + "-slayt--aktif", a);
+              x.setAttribute("aria-hidden", String(!a));
+              x.inert = !a;
+            });
+            nk.forEach((x, j) => {
+              x.classList.toggle(P + "-nokta--aktif", j === i);
+              if (j === i) x.setAttribute("aria-current", "true");
+              else x.removeAttribute("aria-current");
+            });
+            k.style.setProperty("--i", String(i));
+            aktif = i;
+            if (du && duyur) du.textContent = sl[i].getAttribute("aria-label") || "";
+          };
+          const durdur = () => {
+            if (zam) { clearInterval(zam); zam = null; }
+            k.classList.remove(P + "--oynuyor");
+          };
+          const baslat = () => {
+            durdur();
+            if (!oto || bekle || document.hidden) return;
+            void k.offsetWidth;
+            k.classList.add(P + "--oynuyor");
+            zam = setInterval(() => goster(aktif + 1, false), sure);
+          };
+          const etiket = () => {
+            if (!oy) return;
+            oy.setAttribute("aria-label", oto ? (k.dataset.dur || "") : (k.dataset.oyna || ""));
+            const ik = oy.querySelector(".material-symbols-outlined");
+            if (ik) ik.textContent = oto ? "pause" : "play_arrow";
+          };
+          const git = (i) => { goster(i, true); baslat(); };
+          k.querySelectorAll("[data-kayan]").forEach((b) => b.addEventListener("click", () => git(aktif + (b.dataset.kayan === "geri" ? -1 : 1))));
+          nk.forEach((b, j) => b.addEventListener("click", () => git(j)));
+          if (oy) oy.addEventListener("click", () => { oto = !oto; etiket(); if (oto) { bekle = false; baslat(); } else durdur(); });
+          k.addEventListener("keydown", (e) => {
+            const r = rtl();
+            if (e.key === "ArrowRight") { e.preventDefault(); git(aktif + (r ? -1 : 1)); }
+            else if (e.key === "ArrowLeft") { e.preventDefault(); git(aktif + (r ? 1 : -1)); }
+            else if (e.key === "Home") { e.preventDefault(); git(0); }
+            else if (e.key === "End") { e.preventDefault(); git(n - 1); }
+          });
+          k.addEventListener("mouseenter", () => { bekle = true; durdur(); });
+          k.addEventListener("mouseleave", () => { bekle = false; baslat(); });
+          k.addEventListener("focusin", () => { bekle = true; durdur(); });
+          k.addEventListener("focusout", (e) => { if (!k.contains(e.relatedTarget)) { bekle = false; baslat(); } });
+          let bx = null;
+          k.addEventListener("touchstart", (e) => { bx = e.touches && e.touches[0] ? e.touches[0].clientX : null; }, { passive: true });
+          k.addEventListener("touchend", (e) => {
+            if (bx === null || !e.changedTouches || !e.changedTouches[0]) return;
+            const f = e.changedTouches[0].clientX - bx;
+            bx = null;
+            if (Math.abs(f) < 40) return;
+            git(aktif + ((f < 0) !== rtl() ? 1 : -1));
+          }, { passive: true });
+          document.addEventListener("visibilitychange", () => { if (document.hidden) durdur(); else baslat(); });
+          goster(0, false);
+          etiket();
+          baslat();
+        };
+    document.querySelectorAll("." + P).forEach((s) => {
+      if (s.dataset.fbHazir) return;
+      s.dataset.fbHazir = "1";
+      kayan(s, P, az);
     });
-    /* hover/odakta duraklat */
-    kok.addEventListener("mouseenter", function () { duraklat = true; durdur(); });
-    kok.addEventListener("mouseleave", function () { duraklat = false; baslat(); });
-    kok.addEventListener("focusin", function () { duraklat = true; durdur(); });
-    kok.addEventListener("focusout", function (e) { if (!kok.contains(e.relatedTarget)) { duraklat = false; baslat(); } });
-    /* dokunma kaydırma (40 px eşik) */
-    var bx = null;
-    kok.addEventListener("touchstart", function (e) { bx = e.touches && e.touches[0] ? e.touches[0].clientX : null; }, { passive: true });
-    kok.addEventListener("touchend", function (e) {
-      if (bx === null || !e.changedTouches || !e.changedTouches[0]) { return; }
-      var fark = e.changedTouches[0].clientX - bx; bx = null;
-      if (Math.abs(fark) < 40) { return; }
-      var ileriMi = fark < 0; if (rtl) { ileriMi = !ileriMi; }
-      goster(ileriMi ? aktif + 1 : aktif - 1); baslat();
-    }, { passive: true });
-    /* sekme gizliyken dur */
-    document.addEventListener("visibilitychange", function () { if (document.hidden) { durdur(); } else { baslat(); } });
-
-    goster(0);
-    oynatGuncelle();
-    baslat();
   })();
 </script>
